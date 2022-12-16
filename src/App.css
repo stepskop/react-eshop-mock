@@ -2,114 +2,128 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-  font-family: CustomOne;
-  src: url(../Pacifico-Regular.ttf);
+    font-family: CustomOne;
+    src: url(../Pacifico-Regular.ttf);
 }
+
 @font-face {
-  font-family: CustomTwo;
-  src: url(../Bhaijaan.ttf);
+    font-family: CustomTwo;
+    src: url(../Bhaijaan.ttf);
 }
 
 :root {
-  --CustomBlak: #1e1e1e;
-  --CustomDarkBlue: #30007e;
-  --CustomLightBlue: #78aeff;
-  --CustomGreen: #66ff75;
+    --CustomBlak: #1e1e1e;
+    --CustomDarkBlue: #30007e;
+    --CustomLightBlue: #78aeff;
+    --CustomGreen: #66ff75;
 }
 
 h1,
 h2,
 h3 {
-  font-family: CustomOne;
+    font-family: CustomOne;
 }
+
 main {
-  font-family: CustomTwo;
+    font-family: CustomTwo;
 }
+
 .welcome {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*box-shadow: 7px 3px 25px 5px rgba(0,0,0,0.56);*/
 }
+
 .welcome > h1 {
-  position: absolute;
-  z-index: 9;
-  display: inline-flex;
-  user-select: none;
-  background-color: transparent;
-  color: var(--CustomLightBlue);
-  font-size: xx-large;
+    position: absolute;
+    z-index: 9;
+    display: inline-flex;
+    user-select: none;
+    background-color: transparent;
+    color: var(--CustomLightBlue);
+    font-size: xx-large;
 }
+
 .welcome > img {
-  position: relative;
-  filter: grayscale(1);
+    position: relative;
+    filter: grayscale(1);
 }
+
 .welcome > button {
-  align-self: flex-start;
+    align-self: flex-start;
 }
+
 .product {
-  display: flex;
-  /* flex-direction: column;
-  justify-content: center;
-  align-items: center; */
+    /*box-shadow: 7px 3px 25px 5px rgba(0,0,0,0.56);*/
+    display: flex;
+    /*border: 1px solid black;*/
+    border-radius: 2px;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
 }
 
 .product > h2 {
-  position: absolute;
-  z-index: 9;
-  display: inline-flex;
-  user-select: none;
-  background-color: transparent;
-  color: var(--CustomBlak);
-  font-size: x-large;
-  padding-top: 0.5em;
-  padding-left: 1em;
+    position: absolute;
+    z-index: 9;
+    display: inline-flex;
+    user-select: none;
+    background-color: transparent;
+    color: var(--CustomBlak);
+    font-size: x-large;
+    padding-top: 0.5em;
+    padding-left: 1em;
 }
+
 .product > img {
-  position: relative;
-  filter: grayscale(1);
+    position: relative;
+    z-index: 5;
+    filter: grayscale(1);
 }
+
 .button-buy-now {
-  background-color: transparent;
-  border: 1px solid var(--CustomBlak);
-  /* border-radius: 8px; */
-  box-sizing: border-box;
-  color: var(--CustomBlak);
-  cursor: pointer;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 20px;
-  /* margin: 0; */
-  outline: none;
-  /* padding: 13px 23px; */
-  padding: 3px;
-  /* position: relative; */
-  text-align: center;
-  text-decoration: none;
-  touch-action: manipulation;
-  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
+    background-color: transparent;
+    border: 1px solid var(--CustomBlak);
+    /* border-radius: 8px; */
+    box-sizing: border-box;
+    color: var(--CustomBlak);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    /* margin: 0; */
+    outline: none;
+    /* padding: 13px 23px; */
+    padding: 3px;
+    /* position: relative; */
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
     transform 0.1s;
-  user-select: none;
-  -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .button-buy-now:focus-visible {
-  box-shadow: var(--CustomBlak) 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
-  transition: box-shadow 0.2s;
+    box-shadow: var(--CustomBlak) 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow 0.2s;
 }
 
 .button-buy-now:active {
-  background-color: #f7f7f7;
-  border-color: var(--CustomBlak);
-  transform: scale(0.96);
+    background-color: #f7f7f7;
+    border-color: var(--CustomBlak);
+    transform: scale(0.96);
 }
 
 .button-buy-now:disabled {
-  border-color: #dddddd;
-  color: #dddddd;
-  cursor: not-allowed;
-  opacity: 1;
+    border-color: #dddddd;
+    color: #dddddd;
+    cursor: not-allowed;
+    opacity: 1;
 }
 
 /* .wrapper {
@@ -118,53 +132,56 @@ main {
 } */
 
 .button {
-  border: none;
-  background: none;
-  position: relative;
-  display: inline-block;
-  margin-bottom: 0;
-  padding: .5em;
-  padding-inline: 1.7em;
-  /* padding: 25px 86px; */
-  height: auto;
-  width: auto;
-  font-size: 1rem;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  cursor: pointer;
-  color: var(--CustomBlak);
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid rgba(0, 0, 0, 0.216);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+    border: none;
+    background: none;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: .5em;
+    padding-inline: 1.7em;
+    /* padding: 25px 86px; */
+    height: auto;
+    width: auto;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    color: var(--CustomBlak);
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 0.216);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
+
 user-select:none .button.button--big {
-  padding: 25px 86px;
-  font-size: 1.5625rem;
+    padding: 25px 86px;
+    font-size: 1.5625rem;
 }
+
 .button:after {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: -1;
-  display: block;
-  content: "";
-  height: 22px;
-  width: 100%;
-  background-size: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -1;
+    display: block;
+    content: "";
+    height: 22px;
+    width: 100%;
+    background-size: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
+
 .button:hover,
 .button:focus {
-  color: #fff;
-  background-color: var(--CustomLightBlue);
-  text-decoration: none;
-  outline: none;
+    color: #fff;
+    background-color: var(--CustomLightBlue);
+    text-decoration: none;
+    outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */
