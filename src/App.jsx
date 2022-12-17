@@ -2,6 +2,8 @@ import {useState} from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 import Carousel from "../components/carousel";
+// import {CardWelcome} from "../components/card.jsx";
+// import {CardProdcut} from "../components/card.jsx";
 
 function App() {
     const [count, setCount] = useState(0);
@@ -9,13 +11,13 @@ function App() {
     return (
         <main className="flex flex-col justify-between">
             {/* navbar ------------------------------------------------------------------------------------------------*/}
-            <nav className="flex justify-between items-center mx-4 border-b border-black">
+            <nav className="flex justify-between items-center mx-4">
                 <div className="pl-5">
                     <img className="w-8 h-auto" src="../imgs/burger.svg" alt=""/>
                 </div>
                 <div className="w-32 my-2">
                     <img
-                        className="saturate-0 h-auto"
+                        className="saturate-0 h-auto border-dotted border-b"
                         src="../imgs/big-logo.png"
                         alt=""
                     />
@@ -27,38 +29,49 @@ function App() {
             </nav>
             {/* welcome here ------------------------------------------------------------------------------------------------*/}
             <section>
-                <div className="welcome relative text-center w-80 mx-auto mt-10">
-                    <h1 className="">
-                        Welcome to our site!
-                        {/* absolute left-1/4 top-1/3 text-red-600 font-bold w-2/4 text-3xl */}
-                    </h1>
+                <div className="welcome relative text-center w-11/12 mx-auto mt-4">
+                    <div className="card bg-base-100 shadow-xl image-full">
+                        <figure><img src="../imgs/title-image.jpeg" alt="Shoes"/></figure>
+                        <div className="card-body">
+                            <h1 className="card-title">Welcome to our site!</h1>
+                            <p>We are simple brand with even simplier products</p>
+                            <div className="card-actions justify-end">
+                                <button className="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    {/*<h1 className="">*/}
+                    {/*    Welcome to our site!*/}
+                    {/*    /!* absolute left-1/4 top-1/3 text-red-600 font-bold w-2/4 text-3xl *!/*/}
+                    {/*</h1>*/}
 
-                    {/* absolute bottom-0 left-0 */}
-                    <img
-                        className=""
-                        src="../imgs/title-image.jpeg"
-                        alt=""
-                        // grayscale transition duration-150 ease-in hover:grayscale-0 transition duration-150 ease-out
-                    />
+                    {/*/!* absolute bottom-0 left-0 *!/*/}
+                    {/*<img*/}
+                    {/*    className=""*/}
+                    {/*    src="../imgs/title-image.jpeg"*/}
+                    {/*    alt=""*/}
+                    {/*    // grayscale transition duration-150 ease-in hover:grayscale-0 transition duration-150 ease-out*/}
+                    {/*/>*/}
 
-                    <button class="button button--big">Latest Drops</button>
+                    {/*<button class="button button--big">Latest Drops</button>*/}
                 </div>
                 {/* some text here ------------------------------------------------------------------------------------------------*/}
-                <div className="product relative text-center w-80 mx-auto mt-10">
-                    <h2 className="">
-                        {/* absolute left-1/4 top-1/2 text-red-600 font-bold w-2/4 text-3xl */}
-                        Basic Black One
-                    </h2>
-                    <img className="" src="../imgs/hmgoepprod.jpg" alt=""/>
-                    <div className="absolute z-10 flex justify-self-end">
-                        <button className="button button--big flex">Buy Now</button>
+
+                <div className="w-80 mx-auto mt-10 card card-compact bg-base-100 shadow-xl">
+                    <figure><img src="../imgs/hmgoepprod.jpg"/></figure>
+                    <div className="card-body">
+                        <h2 className="card-title">Shoes!</h2>
+                        <p>Buy simply, not expensive.</p>
+                        <div className="card-actions justify-end">
+                            <button className="btn btn-primary">Buy Now</button>
+                        </div>
                     </div>
                 </div>
 
                 {/* carousel ------------------------------------------------------------------------------------------------*/}
                 <div className="carousel flex flex-col justify-center mt-10">
                     <Carousel/>
-                    <button className="button button--big w-32 mx-auto mt-5" role="button">
+                    <button className="btn btn-primary w-32 mx-auto mt-5" role="button">
                         Explore
                     </button>
                 </div>
@@ -70,6 +83,10 @@ function App() {
                         quis neque nihil pariatur porro libero obcaecati fugiat architecto
                         maiores. Nesciunt nihil exercitationem voluptas ab dolor! Cum
                         laborum excepturi voluptatem?
+                        <br/>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab
+                        quis neque nihil pariatur porro libero obcaecati fugiat architecto
+                        maiores. Nesciunt nihil exercitat
                     </p>
                 </div>
             </section>
