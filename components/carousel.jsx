@@ -12,7 +12,7 @@ import "../styles.css";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-export default function Carousel() {
+export default function Carousel(param) {
   return (
     <>
       <Swiper
@@ -29,14 +29,12 @@ export default function Carousel() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide><img src="../imgs/title-image.jpeg" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="../imgs/title-image.jpeg" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="../imgs/title-image.jpeg" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="../imgs/title-image.jpeg" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="../imgs/title-image.jpeg" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="../imgs/title-image.jpeg" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="../imgs/title-image.jpeg" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="../imgs/title-image.jpeg" alt="" /></SwiperSlide>
+        <SwiperSlide><img src={param.image} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={param.image} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={param.image} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={param.image} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={param.image} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={param.image} alt="" /></SwiperSlide>
       </Swiper>
     </>
   );
