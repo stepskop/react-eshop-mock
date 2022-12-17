@@ -50,94 +50,16 @@ main {
     font-family: CustomTwo;
 }
 
-.welcome {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-}
-
-.welcome > h1 {
-    /*position: absolute;*/
-    /*z-index: 9;*/
-    /*display: inline-flex;*/
-    /*user-select: none;*/
-    /*background-color: transparent;*/
-    /*color: var(--CustomLightBlue);*/
-    /*font-size: xx-large;*/
-}
-
-.welcome > img {
-    /*position: relative;*/
-    /*filter: grayscale(1);*/
-}
-
-.welcome > button {
-    /*align-self: flex-start;*/
-}
-
-.product {
-    display: flex;
-    border-radius: 2px;
-}
+/*.product {*/
+/*    display: flex;*/
+/*    border-radius: 2px;*/
+/*}*/
 
 .mySwiper {
     border-radius: 16px;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
-/*.button {*/
-/*    border: none;*/
-/*    background: none;*/
-/*    position: relative;*/
-/*    display: inline-block;*/
-/*    margin-bottom: 0;*/
-/*    padding: .5em;*/
-/*    padding-inline: 1.7em;*/
-/*    !* padding: 25px 86px; *!*/
-/*    height: auto;*/
-/*    width: auto;*/
-/*    font-size: 1rem;*/
-/*    font-weight: 700;*/
-/*    text-align: center;*/
-/*    text-decoration: none;*/
-/*    vertical-align: middle;*/
-/*    cursor: pointer;*/
-/*    color: var(--CustomBlak);*/
-/*    background-color: #fff;*/
-/*    background-image: none;*/
-/*    border: 1px solid rgba(0, 0, 0, 0.216);*/
-/*    -webkit-user-select: none;*/
-/*    -moz-user-select: none;*/
-/*    -ms-user-select: none;*/
-/*}*/
-
-/*user-select:none .button.button--big {*/
-/*    padding: 25px 86px;*/
-/*    font-size: 1.5625rem;*/
-/*}*/
-
-/*.button:after {*/
-/*    position: absolute;*/
-/*    top: 100%;*/
-/*    left: 0;*/
-/*    z-index: -1;*/
-/*    display: block;*/
-/*    content: "";*/
-/*    height: 22px;*/
-/*    width: 100%;*/
-/*    background-size: 100%;*/
-/*    -webkit-backface-visibility: hidden;*/
-/*    backface-visibility: hidden;*/
-/*}*/
-
-/*.button:hover,*/
-/*.button:focus {*/
-/*    color: #fff;*/
-/*    background-color: var(--CustomLightBlue);*/
-/*    text-decoration: none;*/
-/*    outline: none;*/
-/*}*/
 
 footer {
     box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.1);
@@ -217,7 +139,7 @@ nav{
 }
 
 #overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after {
-    /*background: #333332;*/
+    background: #333332;
 }
 
 input[type=checkbox] {
@@ -277,6 +199,6 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
 }
 
 #overlay ul li a:hover {
-    /*color: #333332;*/
+    color: #333332;
 }
 
