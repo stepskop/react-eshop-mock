@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: CustomOne;
+  src: url(../Pacifico-Regular.ttf);
+}
+@font-face {
+  font-family: CustomTwo;
+  src: url(../Bhaijaan.ttf);
+}
+#app {
+  height: 100%;
+}
+
+/* html,
+body {
+  position: relative;
+  height: 100%;
+} */
+.swiper {
+  width: 320px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mySwiper {
+  border-radius: 16px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+#overlay-button {
+  padding: 26px 11px;
+  z-index: 5;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#overlay-button span {
+  height: 3px;
+  width: 25px;
+  border-radius: 2px;
+  background-color: #1e1e1e;
+  position: relative;
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+
+#overlay-button span:before {
+  top: -10px;
+  visibility: visible;
+}
+
+#overlay-button span:after {
+  top: 10px;
+}
+
+#overlay-button span:before,
+#overlay-button span:after {
+  height: 3px;
+  width: 30px;
+  border-radius: 2px;
+  background-color: #1e1e1e;
+  position: absolute;
+  content: "";
+  transition: all 0.2s ease-in-out;
+}
+
+#overlay-button:hover span,
+#overlay-button:hover span:before,
+#overlay-button:hover span:after {
+  background: #1e1e1e;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ #overlay {
+  visibility: visible;
+}
+
+input[type=checkbox]:checked ~ #overlay-button:hover span,
+input[type=checkbox]:checked ~ #overlay-button span {
+  background: transparent;
+}
+
+input[type=checkbox]:checked ~ #overlay-button span:before {
+  transform: rotate(45deg) translate(7px, 7px);
+  opacity: 1;
+}
+
+input[type=checkbox]:checked ~ #overlay-button span:after {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+#overlay {
+  margin-inline: auto;
+  z-index: 250;
+  position: absolute;
+  visibility: hidden;
+  margin-inline: auto;
+  width: 300px;
+  background: #1e1e1e;
+  border-radius: 1rem;
+  left: 1em;
+  right: 1em;
+}
+#overlay ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  list-style-type: none;
+  margin-inline: auto;
+  padding: 0.2em;
+}
+#overlay ul li {
+  padding: 0.3em 0em;
+}
+#overlay ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+#overlay ul li a:hover {
+  color: #78aeff;
+}
+
+#overlay.active {
+  visibility: visible;
+  position: relative;
+}
+
+footer {
+  box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: inherit;
+  scrollbar-color: #78aeff transparent;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #78aeff;
+  border: 1px solid #78aeff;
+  border-radius: 3px;
+}
+
+body {
+  /* background: #eee; */
+  /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
+  /* font-size: 14px; */
+  /* color: #000; */
+  margin: 0;
+  padding: 0;
+  animation: bugfix infinite 1s;
+  -webkit-animation: bugfix infinite 1s;
+}
+body main {
+  font-family: CustomTwo;
+}
+body main h1,
+body main h2,
+body main h3 {
+  font-family: CustomOne;
+}/*# sourceMappingURL=app.css.map */
