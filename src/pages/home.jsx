@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "E:/Documents/SSPS3/STP/my-project/components/carousel";
+import Carousel from "../components/carousel";
 
 function Home() {
   return (
@@ -9,7 +9,7 @@ function Home() {
         <div className="welcome text-center w-80 mx-auto mt-4">
           <div className="card bg-base-100 shadow-xl image-full">
             <figure>
-              <img src="../imgs/title-image.jpeg" alt="Shoes" />
+              <img src="../src/assets/imgs/title-image.jpeg" alt="Shoes" />
             </figure>
             <div className="card-body">
               <h1 className="card-title">Welcome to our site!</h1>
@@ -22,7 +22,7 @@ function Home() {
         </div>
         <div className="w-80 mx-auto mt-10 card card-compact bg-base-100 shadow-xl">
           <figure>
-            <img src="../imgs/hmgoepprod.jpg" />
+            <img src="../src/assets/imgs/hmgoepprod.jpg" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">Basic black</h2>
@@ -33,7 +33,7 @@ function Home() {
           </div>
         </div>
         <div className="carousel flex flex-col justify-center mt-10">
-          <Carousel image="../imgs/hmgoepprod.jpg"></Carousel>
+          <Carousel image="../src/assets/imgshmgoepprod.jpg"></Carousel>
           <button className="btn btn-primary w-32 mx-auto mt-5" role="button">
             Explore
           </button>
@@ -70,7 +70,7 @@ function Home() {
           </div>
         </div>
         <div className="">
-          {/*<img className="w-32" src="../imgs/big-logo.png" alt=""/>*/}
+          {/*<img className="w-32" src="../src/assets/imgsbig-logo.png" alt=""/>*/}
           <p className="opacity-60">Copyright © 2022 Blendade</p>
         </div>
         <div className="flex flex-row gap-x-1 flex-wrap opacity-75">

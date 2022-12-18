@@ -33,10 +33,10 @@ export const Navbar = () => {
         </div>
       </div>
       <div>
-        <img className="w-28" src="../imgs/big-logo.png" alt="" />
+        <img className="w-28" src="../src/assets/imgs/big-logo.png" alt="" />
       </div>
       <div className="flex flex-row items-center gap-x-2 ">
-        <img className="h-auto w-6" src="../imgs/shopping-cart.svg" alt="" />
+        <img className="h-auto w-6" src="../src/assets/imgs/shopping-cart.svg" alt="" />
         <p className="font-semibold text-xs">0</p>
       </div>
     </nav>
