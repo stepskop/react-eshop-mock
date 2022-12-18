@@ -1,16 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+#app {
+  height: 100%;
+}
+
+/* html,
+body {
+  position: relative;
+  height: 100%;
+} */
+body {
+  /* background: #eee; */
+  /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
+  /* font-size: 14px; */
+  /* color: #000; */
+  margin: 0;
+  padding: 0;
+  animation: bugfix infinite 1s;
+  -webkit-animation: bugfix infinite 1s;
+}
+
+.swiper {
+  width: 320px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 @font-face {
   font-family: CustomOne;
   src: url(../Pacifico-Regular.ttf);
 }
-
 @font-face {
   font-family: CustomTwo;
   src: url(../Bhaijaan.ttf);
 }
-
 :root {
   --CustomBlak: #1e1e1e;
   --CustomDarkBlue: #30007e;
@@ -51,21 +91,19 @@ main {
 
 .mySwiper {
   border-radius: 16px;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
 }
 
 footer {
   box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.1);
 }
 
-body {
-  animation: bugfix infinite 1s;
-  -webkit-animation: bugfix infinite 1s;
-}
 nav {
   z-index: 200;
   position: relative;
 }
+
 @keyframes bugfix {
   from {
     padding: 0;
@@ -74,7 +112,6 @@ nav {
     padding: 0;
   }
 }
-
 @-webkit-keyframes bugfix {
   from {
     padding: 0;
@@ -83,7 +120,6 @@ nav {
     padding: 0;
   }
 }
-
 #overlay-button {
   /* position: absolute; */
   /* right: 2em; */
@@ -191,4 +227,4 @@ input[type="checkbox"]:checked ~ #overlay-button span:after {
 
 #overlay ul li a:hover {
   color: #333332;
-}
+} /*# sourceMappingURL=app.css.map */

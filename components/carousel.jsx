@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import "../src/styles.css";
+import "../src/App.css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";

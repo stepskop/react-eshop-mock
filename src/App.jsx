@@ -10,7 +10,7 @@ function App() {
     <main className="flex flex-col justify-between">
       {/* navbar ------------------------------------------------------------------------------------------------*/}
 
-      <nav className="w-80 flex justify-around flex-row">
+      <nav className="w-80 flex justify-around flex-row items-center mx-auto border-2 border-white rounded-2xl shadow-xl">
         <div>
           <input type="checkbox" id="overlay-input" />
           <label htmlFor="overlay-input" id="overlay-button">
