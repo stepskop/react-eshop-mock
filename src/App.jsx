@@ -10,7 +10,7 @@ function App() {
     <main className="flex flex-col justify-between">
       {/* navbar ------------------------------------------------------------------------------------------------*/}
 
-      <nav>
+      <nav className="w-80 flex justify-around flex-row">
         <div>
           <input type="checkbox" id="overlay-input" />
           <label htmlFor="overlay-input" id="overlay-button">
@@ -31,7 +31,7 @@ function App() {
           </div>
         </div>
         <div>
-          <img src="../imgs/big-logo.png" alt="" />
+          <img className="w-32" src="../imgs/big-logo.png" alt="" />
         </div>
         <div className="flex flex-row items-center gap-x-2 pr-5">
           <img className="h-auto" src="../imgs/shopping-cart.svg" alt="" />
@@ -77,7 +77,7 @@ function App() {
           </button>
         </div>
         {/* about us ------------------------------------------------------------------------------------------------*/}
-        <div className="border-2 border-white rounded-2xl shadow-xl rounded w-80 mx-auto mt-10 p-3 px-4">
+        <div className="border-2 border-white rounded-2xl shadow-xl w-80 mx-auto mt-10 p-3 px-4">
           <h3 className="pb-1.5 text-3xl">About us</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab
@@ -92,7 +92,7 @@ function App() {
         </div>
       </section>
       {/* footer ------------------------------------------------------------------------------------------------*/}
-      <footer className="mt-14 my-4 p-3 border-2 border-white rounded-2xl rounded w-80 mx-auto">
+      <footer className="mt-14 my-4 p-3 border-2 border-white rounded-2xl w-80 mx-auto">
         <div className="flex flex-row  gap-x-14 gap-y-3.5 mb-4">
           <div className="pb-2 ">
             {/*border-dotted  border-black border-t-2 border-t-2*/}
