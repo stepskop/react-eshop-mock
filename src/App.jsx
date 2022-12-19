@@ -1,8 +1,7 @@
 import React from "react";
-// import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import "../src/styles/App.css";
-// import Navbar from "./components/navbar";
 import Carousel from "../src/components/carousel";
+import { CardProduct } from "./components/card";
 
 function App() {
   return (
@@ -37,7 +36,7 @@ function App() {
             </ul>
           </div>
         </div>
-        <div>
+        <div className="grayscale-0">
           <img className="w-28" src="../src/assets/imgs/big-logo.png" alt="" />
         </div>
         <div className="flex flex-row items-center gap-x-2 ">
@@ -52,8 +51,8 @@ function App() {
       <section>
         <div className="welcome text-center w-80 mx-auto mt-4">
           <div className="card bg-base-100 shadow-xl image-full">
-            <figure>
-              <img src="../src/assets/imgs/title-image.jpeg" alt="Shoes" />
+            <figure className="grayscale-0">
+              <img  src="../src/assets/imgs/title-image.jpeg" alt="Shoes" />
             </figure>
             <div className="card-body">
               <h1 className="card-title">Welcome to our site!</h1>
@@ -64,20 +63,9 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="w-80 mx-auto mt-10 card card-compact bg-base-100 shadow-xl">
-          <figure>
-            <img src="../src/assets/imgs/hmgoepprod.jpg" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">Basic black</h2>
-            <p>Buy simply, not expensive.</p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">Buy Now</button>
-            </div>
-          </div>
-        </div>
+        <CardProduct></CardProduct>
         <div className="carousel flex flex-col justify-center mt-10">
-          <Carousel image="../src/assets/imgshmgoepprod.jpg"></Carousel>
+          <Carousel image="../src/assets/imgs/hmgoepprod.jpg"></Carousel>
           <button className="btn btn-primary w-32 mx-auto mt-5" role="button">
             Explore
           </button>

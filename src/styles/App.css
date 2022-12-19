@@ -3,11 +3,11 @@
 @tailwind utilities;
 @font-face {
   font-family: CustomOne;
-  src: url(../Pacifico-Regular.ttf);
+  src: url(../assets/Pacifico-Regular.ttf);
 }
 @font-face {
   font-family: CustomTwo;
-  src: url(../Bhaijaan.ttf);
+  src: url(../assets//Bhaijaan.ttf);
 }
 #app {
   height: 100%;
@@ -207,8 +207,21 @@ body {
 body main {
   font-family: CustomTwo;
 }
-body main h1,
-body main h2,
-body main h3 {
+
+h1,
+h2,
+h3 {
   font-family: CustomOne;
+}
+
+.btn-primary {
+  background-color: #78aeff;
+  border-color: #78aeff;
+  color: black;
+}
+
+.btn-primary:hover {
+  background-color: #5a86c7;
+  border-color: #5a86c7;
+  color: black;
 }/*# sourceMappingURL=app.css.map */
