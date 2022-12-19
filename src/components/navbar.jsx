@@ -16,7 +16,7 @@ export default function Navbar() {
             <li><a href="#">Story</a></li>
             {/* <li><Link to="/Story">Story</Link></li> */}
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Contact</a></li>
+            {/* <li><a href="#">Contact</a></li> */}
             <li><a href="#">Legal</a></li>
             {/* <li><Link to="/Legal">Legal</Link></li> */}
           </ul>
