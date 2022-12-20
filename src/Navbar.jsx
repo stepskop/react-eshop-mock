@@ -19,8 +19,10 @@ export default function Navbar() {
               <Link to="/products">Product</Link>
             </li>
             <li>
-              {" "}
               <Link to="/story">Story</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
