@@ -4,26 +4,20 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import Products from "./Products";
 import Story from "./Story";
-import { Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <main className="flex flex-col justify-between">
         <Navbar></Navbar>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/products">
-            <Products />
-          </Route>
-          <Route path="/story">
-            <Story />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<Home />}></Route>
+          <Route path="/products" element={<Products />}></Route>
+          <Route path="/story" element={<Story />}></Route>
+        </Routes>
       </main>
-    </Router>
+    </BrowserRouter>
   );
 }
 
