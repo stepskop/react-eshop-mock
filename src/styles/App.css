@@ -208,6 +208,10 @@ h3 {
   font-family: CustomOne;
 }
 
+#newsletter {
+  background-color: rgba(128, 128, 128, 0.097);
+}
+
 .btn-primary {
   background-color: #78aeff;
   border-color: #78aeff;

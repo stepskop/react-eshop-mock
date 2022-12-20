@@ -28,7 +28,7 @@
 }
 
 body {
-  // background: #eee; 
+  // background: #eee;
   /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
   /* font-size: 14px; */
   /* color: #000; */
@@ -45,16 +45,17 @@ h2,
 h3 {
   font-family: CustomOne;
 }
-
-.btn-primary{
+#newsletter {
+  background-color: rgba(128, 128, 128, 0.097);
+}
+.btn-primary {
   background-color: $CustomLightBlue;
   border-color: $CustomLightBlue;
   color: black;
-
 }
 
-.btn-primary:hover{
-    background-color:#5a86c7 ;
-    border-color: #5a86c7;
-    color: black;
+.btn-primary:hover {
+  background-color: #5a86c7;
+  border-color: #5a86c7;
+  color: black;
 }

@@ -19,7 +19,6 @@ function App() {
           <Route path="/story" element={<Story />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
-        <Footer/>
       </main>
     </BrowserRouter>
   );
