@@ -27,13 +27,13 @@ export default function Contact() {
                 alt="dining"
                 className="w-full h-full absolute z-0 sm:hidden"
               /> */}
-            <div className=" md:my-16 lg:py-16 py-10 w-full md:mx-24 md:px-12 px-4 flex flex-col items-center justify-center relative z-40 rounded-2xl text-black">
+            <div className=" md:my-16 lg:py-16 py-4 w-full md:mx-24 md:px-12 px-4 flex flex-col items-center justify-center relative z-40 rounded-2xl text-black">
               {/* <h1 className="text-4xl font-semibold leading-9 text-white text-center">
                   Don’t miss out!
                 </h1> */}
               <p className="text-base leading-normal text-center ">
                 Subscribe to your newsletter to stay in the loop. Our newsletter
-                is sent once in <br />a week on every friday so subscribe to get
+                is sent once in a week on every friday so subscribe to get
                 latest news and updates.
               </p>
               <div className="sm:border border-white flex-col sm:flex-row flex items-center lg:w-5/12 w-full mt-6 space-y-4 sm:space-y-0 ">
@@ -48,9 +48,9 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="flex flex-row justify-center gap-y-6 mb-4 mt-6 text-xl drop-shadow-xl">
+        <div className="flex flex-row  gap-y-6 mb-4 mt-6 ml-10 text-xl drop-shadow-xl">
           <div className="pb-2 ">
-            <h6 className="font-bold text-2xl text-center pb-2">
+            <h6 className="font-bold text-2xl  pb-2">
               Contact us via
             </h6>
             <p>testingmail@mail.xyz</p>
@@ -58,9 +58,9 @@ export default function Contact() {
             <p>Na pamlsku 12, Praha 1</p>
           </div>
         </div>
-        <div className="flex flex-row justify-center gap-y-6 mb-4 mt-6 text-xl drop-shadow-xl">
+        <div className="flex flex-row gap-y-6 mb-4 mt-6 ml-10  text-xl drop-shadow-xl">
           <div className=" pb-2 ">
-            <h6 className="font-bold text-2xl text-center pb-2">
+            <h6 className="font-bold text-2xl  pb-2">
               Follow us on
             </h6>
             <p>Instagram</p>
