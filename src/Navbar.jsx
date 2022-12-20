@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./styles/App.css";
 
 export default function Navbar() {
   return (
@@ -10,15 +12,16 @@ export default function Navbar() {
         </label>
         <div id="overlay">
           <ul>
-            {/* <li><Link to="/">Home</Link> </li> */}
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Story</a></li>
-            {/* <li><Link to="/Story">Story</Link></li> */}
-            <li><a href="#">Contact</a></li>
-            {/* <li><a href="#">Contact</a></li> */}
-            <li><a href="#">Legal</a></li>
-            {/* <li><Link to="/Legal">Legal</Link></li> */}
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/products">Product</Link>
+            </li>
+            <li>
+              {" "}
+              <Link to="/story">Story</Link>
+            </li>
           </ul>
         </div>
       </div>

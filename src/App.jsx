@@ -1,119 +1,29 @@
 import React from "react";
 import "../src/styles/App.css";
-import Carousel from "../src/components/carousel";
-import { CardProduct } from "./components/card";
+import Navbar from "./Navbar";
+import Home from "./Home";
+import Products from "./Products";
+import Story from "./Story";
+import { Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <main className="flex flex-col justify-between">
-      <nav className="w-80 flex justify-around flex-row items-center mx-auto border-2 border-white rounded-2xl shadow-xl">
-        <div>
-          <input type="checkbox" id="overlay-input" />
-          <label htmlFor="overlay-input" id="overlay-button">
-            <span></span>
-          </label>
-          <div id="overlay">
-            <ul>
-              {/* <li><Link to="/">Home</Link> </li> */}
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">Products</a>
-              </li>
-              <li>
-                <a href="#">Story</a>
-              </li>
-              {/* <li><Link to="/Story">Story</Link></li> */}
-              <li>
-                <a href="#">Contact</a>
-              </li>
-              {/* <li><a href="#">Contact</a></li> */}
-              <li>
-                <a href="#">Legal</a>
-              </li>
-              {/* <li><Link to="/Legal">Legal</Link></li> */}
-            </ul>
-          </div>
-        </div>
-        <div className="grayscale-0">
-          <img className="w-28" src="../src/assets/imgs/big-logo.png" alt="" />
-        </div>
-        <div className="flex flex-row items-center gap-x-2 ">
-          <img
-            className="h-auto w-6"
-            src="../src/assets/imgs/shopping-cart.svg"
-            alt=""
-          />
-          <p className="font-semibold text-xs">0</p>
-        </div>
-      </nav>
-      <section>
-        <div className="welcome text-center w-80 mx-auto mt-4">
-          <div className="card bg-base-100 shadow-xl image-full">
-            <figure className="grayscale-0">
-              <img  src="../src/assets/imgs/title-image.jpeg" alt="Shoes" />
-            </figure>
-            <div className="card-body">
-              <h1 className="card-title">Welcome to our site!</h1>
-              <p>We are simple brand with even simplier products</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Latest drops</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <CardProduct></CardProduct>
-        <div className="carousel flex flex-col justify-center mt-10">
-          <Carousel image="../src/assets/imgs/hmgoepprod.jpg"></Carousel>
-          <button className="btn btn-primary w-32 mx-auto mt-5" role="button">
-            Explore
-          </button>
-        </div>
-        <div className="border-2 border-white rounded-2xl shadow-xl w-80 mx-auto mt-10 p-3 px-4">
-          <h3 className="pb-1.5 text-3xl">About us</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab
-            quis neque nihil pariatur porro libero obcaecati fugiat architecto
-            maiores. Nesciunt nihil exercitationem voluptas ab dolor! Cum
-            laborum excepturi voluptatem?
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab
-            quis neque nihil pariatur porro libero obcaecati fugiat architecto
-            maiores. Nesciunt nihil exercitat
-          </p>
-        </div>
-      </section>
-      <footer className="mt-14 my-4 p-3 border-2 border-white rounded-2xl w-80 mx-auto">
-        <div className="flex flex-row  gap-x-14 gap-y-3.5 mb-4">
-          <div className="pb-2 ">
-            {/*border-dotted  border-black border-t-2 border-t-2*/}
-            <h6 className="font-bold text-lg">Contact Us</h6>
-            <p>testingmail@mail.xyz</p>
-            <p>+420700700700</p>
-            <p>Na pamlsku 12, Praha 1</p>
-          </div>
-          <div className=" pb-2 ">
-            {/*border-dotted  border-black border-t-2 border-t-2*/}
-            <h6 className="font-bold text-lg">Follow Us</h6>
-            <p>Instagram</p>
-            <p>TikTok</p>
-            <p>Facebook</p>
-          </div>
-        </div>
-        <div className="">
-          {/*<img className="w-32" src="../src/assets/imgsbig-logo.png" alt=""/>*/}
-          <p className="opacity-60">Copyright © 2022 Blendade</p>
-        </div>
-        <div className="flex flex-row gap-x-1 flex-wrap opacity-75">
-          <p className=" border-r border-gray-300 pr-2 mr-2">Privacy Policy</p>
-          <p className=" border-r border-gray-300 pr-2 mr-2">Terms of Use</p>
-          <p className=" border-r border-gray-300 pr-2 mr-2">Refunds</p>
-          <p className=" border-r border-gray-300 pr-2 mr-2">Credits</p>
-          <p className="">Legal</p>
-        </div>
-      </footer>
-    </main>
+    <Router>
+      <main className="flex flex-col justify-between">
+        <Navbar></Navbar>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/products">
+            <Products />
+          </Route>
+          <Route path="/story">
+            <Story />
+          </Route>
+        </Switch>
+      </main>
+    </Router>
   );
 }
 
