@@ -2,6 +2,7 @@ import React from "react";
 import { CardProduct } from "./components/card";
 import Carousel from "../src/components/carousel";
 import "../src/styles/App.css";
+import Footer from "./Footer";
 export default function Home() {
   return (
     <>
@@ -41,6 +42,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <Footer/>
     </>
   );
 }
