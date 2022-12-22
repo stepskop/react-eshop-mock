@@ -29,12 +29,8 @@ export default function Carousel(param) {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide><img src={param.image} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={param.image} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={param.image} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={param.image} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={param.image} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={param.image} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={param.image1} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={param.image2} alt="" /></SwiperSlide>
       </Swiper>
     </>
   );
