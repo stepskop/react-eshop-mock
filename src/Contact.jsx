@@ -10,7 +10,7 @@ export default function Contact() {
           </h1>
         </div>
 
-        <div className="2xl:mx-auto 2xl:container mx-auto mt-4 shadow-lg  rounded-2xl">
+        <div className="2xl:mx-auto 2xl:container mx-auto mt-4 border rounded-2xl">
           <div className="w-full relative flex items-center justify-center rounded-2xl">
             {/* <img
                 src="https://i.ibb.co/4sYZ8gC/img-2.png"
