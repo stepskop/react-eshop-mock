@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,8 +11,18 @@ import "../styles/App.css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
+import { client, urlFor } from "../../lib/client";
 
 export default function Carousel(param) {
+  const [products, setProducts] = useState([])
+  useEffect(() => {
+    const fetchdata = async () => {
+      const result = await client.fetch('*[_type == "product" && slug.current == "black-t"][0]')
+      setProducts(result)
+    }
+    fetchdata()
+  }, [])
+
   return (
     <>
       <Swiper
@@ -29,8 +39,9 @@ export default function Carousel(param) {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide><img src={param.image1} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={param.image2} alt="" /></SwiperSlide>
+        
+        {}
+        {products.image ? (products.image.map(element => <SwiperSlide><img src={urlFor(element).url()} alt="" /></SwiperSlide>)) : (<></>)}
       </Swiper>
     </>
   );

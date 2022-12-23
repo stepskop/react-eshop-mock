@@ -11,7 +11,7 @@ export default function Products() {
 
   return (
     <div>
-      Our prs: <br/>
+      Our products: <br/>
       {products?.map((product) => product.name)}
 
     </div>

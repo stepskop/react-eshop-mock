@@ -10,7 +10,7 @@ export default function Home() {
   const [products, setProducts] = useState([])
   useEffect(() => {
     const fetchdata = async () => {
-      const result = await client.fetch('*[_type == "product"][0]')
+      const result = await client.fetch('*[_type == "product" && slug.current == "black-t"][0]')
       setProducts(result)
     }
     fetchdata()
@@ -18,8 +18,11 @@ export default function Home() {
 
   const productProps = {}
   const carouselProps = {}
+
   if (products.image) {
+
     productProps.image = urlFor(products.image[0]).url()
+
     carouselProps.image1 = urlFor(products.image[0]).url()
     carouselProps.image2 = urlFor(products.image[1]).url()
   }
