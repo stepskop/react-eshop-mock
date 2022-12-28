@@ -8,12 +8,12 @@ export default function Products() {
     return (
         <>
             <section className="w-80 mx-auto">
-                <div>
-                    <button>a</button>
-                    <button>a</button>
-                    <button>a</button>
+                <div className="mt-6 flex gap-x-2">
+                    <button className=" rounded-[10px] bg-[#ffb7c1] px-6 py-[2px] hover:bg-[#ca858ec7] hover:ease-in-out hover:duration-200 active:scale-90 active:ease-in-out active:duration-200">Men</button>
+                    <button className=" rounded-[10px] bg-[#ffb7c1] px-6 py-[2px] hover:bg-[#ca858ec7] hover:ease-in-out hover:duration-200 active:scale-90 active:ease-in-out active:duration-200">Men</button>
+                    
                 </div>
-                <div className="mt-4 w-80 mx-auto"  >
+                <div className="mt-6 w-80 mx-auto"  >
                     <h1 className="text-3xl drop-shadow-xl">
                        Man T-shirts
                     </h1>
