@@ -3,7 +3,7 @@ import { CardProduct } from "./components/card";
 import Carousel from "../src/components/carousel";
 import "../src/styles/App.css";
 import Footer from "./Footer";
-
+import { Link } from "react-router-dom"
 
 import { client, urlFor } from '../lib/client';
 export default function Home() {
@@ -47,7 +47,7 @@ export default function Home() {
         <div className="carousel flex flex-col justify-center mt-10">
           <Carousel {...carouselProps}></Carousel>
           <button className="btn btn-primary w-32 mx-auto mt-5" role="button">
-            Explore
+            <Link to="/products">Explore</Link>
           </button>
         </div>
         <div className="border-2 border-white rounded-2xl shadow-xl w-80 mx-auto mt-10 p-3 px-4">
