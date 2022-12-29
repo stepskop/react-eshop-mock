@@ -10,17 +10,17 @@ export default function Contact() {
           </h1>
         </div>
 
-        <div className="2xl:mx-auto 2xl:container mx-auto mt-4 border rounded-2xl">
+        <div className="mx-auto mt-4 border rounded-2xl">
           <div className="w-full relative flex items-center justify-center rounded-2xl">
-            <div className=" md:my-16 lg:py-16 py-4 w-full md:mx-24 md:px-12 px-4 flex flex-col items-center justify-center relative z-40 rounded-2xl text-black">
+            <div className="py-4 w-full px-4 flex flex-col items-center justify-center relative z-40 rounded-2xl text-black">
               <p className="text-base leading-normal text-center ">
                 Subscribe to your newsletter to stay in the loop. Our newsletter
                 is sent once in a week on every friday so subscribe to get
                 latest news and updates.
               </p>
-              <div className="sm:border border-white flex-col sm:flex-row flex items-center lg:w-5/12 w-full mt-6 space-y-4 sm:space-y-0 ">
+              <div className="border border-white flex flex-col items-center w-full mt-6 space-y-0 ">
                 <input
-                  className="border rounded-2xl border-white sm:border-transparent text-base w-full font-medium leading-none  p-4 focus:outline-none bg-transparent placeholder-black"
+                  className="border rounded-2xl border-transparent text-base w-full mb-5 font-medium leading-none  p-4 focus:outline-none bg-transparent placeholder-black"
                   placeholder="Email Address"
                   id="newsletter"
                 />

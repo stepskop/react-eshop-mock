@@ -5,8 +5,8 @@ import Policy from "./components/policy.jsx";
 const Privacy = () => {
   return (
     <>
-      <section className="welcome w-80 mx-auto mt-4 pb-4">
-        <div className="mt-4">
+      <section className="welcome w-80 mx-auto mt-8 pb-4 border-t border-white privacy">
+        <div className="mt-4 ">
           <h1 className="text-3xl drop-shadow-xl text-center">
             Privacy policies
           </h1>
