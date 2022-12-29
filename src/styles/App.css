@@ -9,6 +9,14 @@
   font-family: CustomTwo;
   src: url(../assets//Bhaijaan.ttf);
 }
+@font-face {
+  font-family: CustomThree;
+  src: url(../assets/IndieFlower-Regular.ttf);
+}
+@font-face {
+  font-family: CustomFour;
+  src: url(../assets/ChakraPetch-Regular.ttf);
+}
 #app {
   height: 100%;
 }
@@ -205,7 +213,7 @@ body main {
 h1,
 h2,
 h3 {
-  font-family: CustomOne;
+  font-family: CustomFour;
 }
 
 #newsletter {

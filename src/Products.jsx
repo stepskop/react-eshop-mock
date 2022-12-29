@@ -11,11 +11,11 @@ export default function Products() {
             Men
           </button>
           <button className=" rounded-[10px] bg-[#ffb7c1] px-6 py-[2px] hover:bg-[#ca858ec7] hover:ease-in-out hover:duration-200 active:scale-90 active:ease-in-out active:duration-200">
-            Men
+            Women
           </button>
         </div>
         <div className="mt-6 w-80 mx-auto">
-          <h1 className="text-3xl drop-shadow-xl">Man T-shirts</h1>
+          <h1 className="text-4xl drop-shadow-xl border-b-2 border-black w-fit">Man T-shirts</h1>
         </div>
         <div className="flex flex-row">
           <CardProductMini
