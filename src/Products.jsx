@@ -5,7 +5,7 @@ import { CardProduct, CardProductMini } from "./components/card";
 export default function Products() {
   return (
     <>
-      <section className="w-80 mx-auto border border-black">
+      <section className="w-80 mx-auto">
         <div className="mt-6 flex gap-x-2">
           <button className=" rounded-[10px] bg-[#ffb7c1] px-6 py-[2px] hover:bg-[#ca858ec7] hover:ease-in-out hover:duration-200 active:scale-90 active:ease-in-out active:duration-200">
             Men
@@ -53,7 +53,7 @@ export default function Products() {
           ></CardProductMini>
         </div>
         <div>
-          <div className="card w-80 mx-auto bg-base-100 shadow-xl">
+          <div className="card w-80 mt-10 mx-auto bg-base-100 shadow-xl">
             <div className="card-body">
               <h2 className="card-title">Shoes!</h2>
               <p>If a dog chews shoes whose shoes does he choose?</p>

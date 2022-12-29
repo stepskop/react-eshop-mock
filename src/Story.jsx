@@ -24,6 +24,15 @@ export default function Story() {
             molestiae fugiat?
           </p>
         </div>
+        <div className="border-2 border-white rounded-2xl shadow-xl w-80 mx-auto mt-10 p-3 px-4">
+          <h2 className="text-xl pb-3">And Him</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            sint dolor reprehenderit neque, quaerat ea in laborum assumenda aut,
+            quas cum et inventore. Velit similique soluta delectus fuga
+            molestiae fugiat?
+          </p>
+        </div>
       </section>
       <Footer></Footer>
     </>
