@@ -28,7 +28,7 @@ export default function OneProduct() {
             <p className="tracking-widest ml-2"><span>XS</span> <span>S</span> <span>M</span> <span>L</span></p>
           </div>
         </div>
-        <div className="w-64 mx-auto mt-8 border-2 border-white rounded-2xl shadow-xl p-3 px-4 flex flex-col gap-y-3">
+        <div className="w-72 mx-auto mt-8 border-2 border-white rounded-2xl shadow-xl p-3 px-4 flex flex-col gap-y-3">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
             neque animi itaque non provident, quia saepe facilis nesciunt fugiat
