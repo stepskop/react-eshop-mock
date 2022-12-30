@@ -31,8 +31,7 @@ export default function Navbar() {
         </div>
       </div>
       <div>
-        <button><Link to="/"><img className="w-28" src="../src/assets/imgs/big-logo.png" alt="" /></Link></button>
-        
+        <button><Link to="/"><img className="w-28" src="../src/assets/imgs/big-logo.png" alt="" /></Link></button>        
       </div>
       <div className="flex flex-row items-center gap-x-2 ">
         <img

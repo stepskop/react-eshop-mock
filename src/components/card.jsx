@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const CardProduct = (props) => {
   return (
@@ -27,7 +28,7 @@ export const CardProductMini = (props) => {
         <h2 className="mb-2 gap-1 card-title">{props.title}</h2>
         <p className="pb-2">{props.desc}</p>
         <div className="card-actions justify-center">
-          <button className="min-h-[2rem] text-[0.8rem] h-8 font-medium btn btn-primary">Buy Now</button>
+          <button className="min-h-[2rem] text-[0.8rem] h-8 font-medium btn btn-primary"><Link to="/oneproduct" >Buy Now</Link></button>
         </div>
       </div>
     </div>
