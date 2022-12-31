@@ -39,9 +39,7 @@ export default function Carousel(param) {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        
-        {}
-        {products.image ? (products.image.map(element => <SwiperSlide><img src={urlFor(element).url()} alt="" /></SwiperSlide>)) : (<></>)}
+        {products.image ? (products.image.map(element => <SwiperSlide key={products.image.indexOf(element)}><img src={urlFor(element).url()} alt="" /></SwiperSlide>)) : (<></>)}
       </Swiper>
     </>
   );

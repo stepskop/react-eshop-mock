@@ -18,7 +18,6 @@ export default function Home() {
 
   const productProps = {}
   const carouselProps = {}
-
   if (products.image) {
 
     productProps.image = urlFor(products.image[0]).url()
@@ -45,7 +44,7 @@ export default function Home() {
         </div>
         <CardProduct title={products.name} desc={products.desc} {...productProps}></CardProduct>
         <div className="carousel flex flex-col justify-center mt-10">
-          <Carousel {...carouselProps}></Carousel>
+          <Carousel {...carouselProps}> </Carousel>
           <button className="btn btn-primary w-32 mx-auto mt-5" role="button">
             <Link to="/products">Explore</Link>
           </button>
