@@ -1,6 +1,1 @@
-ReactJS
-ViteJS
-TailwindCSS
-DaisyUI
-SwiperJS
-React-Router-do,
+This is a starter template for [Learn Next.js](https://nextjs.org/learn).

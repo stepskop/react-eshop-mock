@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "./Footer.jsx";
-import { CardProduct, CardProductMini } from "./components/card";
+import Footer from "../components/Footer.jsx";
+import { CardProduct, CardProductMini } from "../components/Card";
 
 export default function Products() {
   return (
@@ -19,35 +19,12 @@ export default function Products() {
         </div>
         <div className="flex flex-row">
           <CardProductMini
-            image="../src/assets/imgs/hmgoepprod.jpg"
+            image="/imgs/hmgoepprod.jpg"
             title="basic black"
             desc="you lookin' for something easy and special?"
           ></CardProductMini>
           <CardProductMini
-            image="../src/assets/imgs/hmgoepprod.jpg"
-            title="basic black"
-            desc="you lookin' for something easy and special?"
-          ></CardProductMini>
-        </div>
-        <div>
-          <div className="card w-80 mt-10 mx-auto bg-base-100 shadow-xl">
-            <div className="card-body">
-              <h2 className="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-            </div>
-            <figure>
-              <img src="../src/assets/imgs/hmgoepprod.jpg" alt="Shoes" />
-            </figure>
-          </div>
-        </div>
-        <div className="flex flex-row">
-          <CardProductMini
-            image="../src/assets/imgs/hmgoepprod.jpg"
-            title="basic black"
-            desc="you lookin' for something easy and special?"
-          ></CardProductMini>
-          <CardProductMini
-            image="../src/assets/imgs/hmgoepprod.jpg"
+            image="/imgs/hmgoepprod.jpg"
             title="basic black"
             desc="you lookin' for something easy and special?"
           ></CardProductMini>
@@ -59,18 +36,41 @@ export default function Products() {
               <p>If a dog chews shoes whose shoes does he choose?</p>
             </div>
             <figure>
-              <img src="../src/assets/imgs/hmgoepprod.jpg" alt="Shoes" />
+              <img src="/imgs/hmgoepprod.jpg" alt="Shoes" />
             </figure>
           </div>
         </div>
         <div className="flex flex-row">
           <CardProductMini
-            image="../src/assets/imgs/hmgoepprod.jpg"
+            image="/imgs/hmgoepprod.jpg"
             title="basic black"
             desc="you lookin' for something easy and special?"
           ></CardProductMini>
           <CardProductMini
-            image="../src/assets/imgs/hmgoepprod.jpg"
+            image="/imgs/hmgoepprod.jpg"
+            title="basic black"
+            desc="you lookin' for something easy and special?"
+          ></CardProductMini>
+        </div>
+        <div>
+          <div className="card w-80 mt-10 mx-auto bg-base-100 shadow-xl">
+            <div className="card-body">
+              <h2 className="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+            <figure>
+              <img src="/imgs/hmgoepprod.jpg" alt="Shoes" />
+            </figure>
+          </div>
+        </div>
+        <div className="flex flex-row">
+          <CardProductMini
+            image="/imgs/hmgoepprod.jpg"
+            title="basic black"
+            desc="you lookin' for something easy and special?"
+          ></CardProductMini>
+          <CardProductMini
+            image="/imgs/hmgoepprod.jpg"
             title="basic black"
             desc="you lookin' for something easy and special?"
           ></CardProductMini>

@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { CardProduct } from "./components/card";
-import Carousel from "../src/components/carousel";
-import "../src/styles/App.css";
-import Footer from "./Footer";
-import { Link } from "react-router-dom";
+import { CardProduct } from "../components/card";
+import Carousel from "../components/carousel";
+import Footer from "../components/Footer";
+import Link from "next/link";
 
 export default function OneProduct() {
   return (
@@ -15,7 +14,7 @@ export default function OneProduct() {
         <div className="w-64 mx-auto mt-2 ">
           <img
             className="shadow-xl rounded-[16px]"
-            src="../src/assets/imgs/hmgoepprod.jpg"
+            src="/imgs/hmgoepprod.jpg"
           />
           <div className="flex flex-row mt-3 mx-4 justify-between items-center h-7">
             <p className="font-semibold text-lg">Cenovka</p>

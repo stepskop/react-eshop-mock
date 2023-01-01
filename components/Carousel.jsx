@@ -7,11 +7,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import "../styles/App.css";
+// import "../styles/App.css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
-import { client, urlFor } from "../../lib/client";
+import { client, urlFor } from "../lib/client.js";
 
 export default function Carousel(param) {
   const [products, setProducts] = useState([])

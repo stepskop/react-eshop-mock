@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "./Footer";
-import Policy from "./components/policy.jsx";
+import Footer from "../components/Footer.jsx";
+import Policy from "../components/Policy.jsx";
 
 const Privacy = () => {
   return (

@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from "react";
-import { CardProduct } from "./components/card";
-import Carousel from "../src/components/carousel";
-import "../src/styles/App.css";
-import Footer from "./Footer";
-import { Link } from "react-router-dom"
+import { CardProduct } from "../components/Card";
+import Carousel from "../components/Carousel";
+import Footer from "../components/Footer";
+import Link from "next/link"
 
 import { client, urlFor } from '../lib/client';
 export default function Home() {
@@ -31,7 +30,7 @@ export default function Home() {
         <div className="welcome text-center w-80 mx-auto mt-4">
           <div className="card bg-base-100 shadow-xl image-full">
             <figure className="grayscale-0">
-              <img src="../src/assets/imgs/title-image.jpeg" alt="Shoes" />
+              <img src="/imgs/title-image.jpeg" alt="Shoes" />
             </figure>
             <div className="card-body">
               <h1 className="card-title font-normal">Welcome to our site!</h1>
@@ -46,7 +45,7 @@ export default function Home() {
         <div className="carousel flex flex-col justify-center mt-10">
           <Carousel {...carouselProps}> </Carousel>
           <button className="btn btn-primary w-32 mx-auto mt-5" role="button">
-            <Link to="/products">Explore</Link>
+            <Link href="/products">Explore</Link>
           </button>
         </div>
         <div className="border-2 border-white rounded-2xl shadow-xl w-80 mx-auto mt-10 p-3 px-4">
