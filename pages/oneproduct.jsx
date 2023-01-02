@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { CardProduct } from "../components/card";
-import Carousel from "../components/carousel";
+import { CardProduct } from "../components/Card";
+import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
 import Link from "next/link";
 
