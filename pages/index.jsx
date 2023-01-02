@@ -5,25 +5,8 @@ import Footer from "../components/Footer";
 import Link from "next/link"
 
 import { client, urlFor } from '../lib/client';
-export default function Home() {
-  const [products, setProducts] = useState([])
-  useEffect(() => {
-    const fetchdata = async () => {
-      const result = await client.fetch('*[_type == "product" && slug.current == "black-t"][0]')
-      setProducts(result)
-    }
-    fetchdata()
-  }, [])
-
-  const productProps = {}
-  const carouselProps = {}
-  if (products.image) {
-
-    productProps.image = urlFor(products.image[0]).url()
-
-    carouselProps.image1 = urlFor(products.image[0]).url()
-    carouselProps.image2 = urlFor(products.image[1]).url()
-  }
+function Home({ products }) {
+  let allImages = products.image
   return (
     <>
       <section>
@@ -41,12 +24,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <CardProduct title={products.name} desc={products.desc} {...productProps}></CardProduct>
+        <CardProduct title={products.name} desc={products.desc} image={urlFor(allImages[0])}></CardProduct>
         <div className="carousel flex flex-col justify-center mt-10">
-          <Carousel {...carouselProps}> </Carousel>
-          <button className="btn btn-primary w-32 mx-auto mt-5" role="button">
-            <Link href="/products">Explore</Link>
-          </button>
+          <Carousel images={allImages}></Carousel>
+          <Link href="/products" className="btn btn-primary w-32 mx-auto mt-5" role="button">
+            EXPLORE
+          </Link>
+          
         </div>
         <div className="border-2 border-white rounded-2xl shadow-xl w-80 mx-auto mt-10 p-3 px-4">
           <h3 className="pb-1.5 text-3xl">About us</h3>
@@ -65,4 +49,15 @@ export default function Home() {
       <Footer/>
     </>
   );
+}
+
+export default Home
+
+export const getServerSideProps = async () => {
+  const query = '*[_type == "product" && slug.current == "black-t"][0]'
+  const products = await client.fetch(query)
+
+  return {
+    props: { products }
+  }
 }
