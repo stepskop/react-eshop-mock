@@ -46,13 +46,23 @@ function Home({products}) {
                     </p>
                 </div>
             </section>
-            <section className="xl:visible">
+            <section className="xl:visible mb-5">
                 <div className="mx-auto w-[90%] h-auto mt-6 relative z-15">
-                    <img src="/imgs/title-image.jpeg" alt="Shoes" className="relative z-1 w-[90vw] max-h-[90vh] border-2 border-white rounded-3xl"/>
+                    <img src="/imgs/title-image.jpeg" alt="Shoes"
+                         className="relative z-1 w-[90vw] max-h-[90vh] border-2 border-white rounded-3xl"/>
                     {/*<h1 className="absolute z-10 text-[54px] pt-[25%] pl-[5%]">Welcome text here</h1>*/}
                 </div>
-                <div className="relative z-15 w-[90%] mx-auto mt-[15em]">
-                    <img src="/imgs/hmgoepprod.jpg" className="border-2 border-white rounded-3xl max-h-[70vh] ml-[10em]"/>
+                <div
+                    className="relative z-15 xl:w-[70%] lg:w-[80%] md:[90%] mx-auto mt-[15em] flex  shadow-xl border-2 border-transparent rounded-3xl">
+                    <img src="/imgs/hmgoepprod.jpg"
+                         className="border border-transparent rounded-3xl max-h-[70vh]"/>
+                    <div className="h-[100%] flex flex-col ml-40">
+                        <h3 className="text-[5em]">Black T-shirt</h3>
+                        <p className="text-2xl mt-4 w-[70%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque
+                            cupiditate, debitis dignissimos dolorem laboriosam non nulla qui similique sit? Cupiditate
+                            magnam nam totam. Exercitationem ipsum molestiae placeat sequi tenetur!</p>
+                        <button className="btn btn-primary mt-20 self-start text-xl px-10 ">Buy Now</button>
+                    </div>
                 </div>
             </section>
             <Footer/>

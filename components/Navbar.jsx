@@ -45,26 +45,26 @@ export default function Navbar() {
                     <p className="font-semibold text-xs">0</p>
                 </div>
             </nav>
-            <nav className="xl:hidden h-40 border-red-500 border-2 flex justify-between">
-                <div>
-                    <button><Link href="/"><img className="w-28" src="/imgs/big-logo.png" alt=""/></Link></button>
-                </div>
-                <div className="flex flex-row items-center gap-x-2 justify-self-end">
-                    <img
-                        className="h-auto w-6"
-                        src="/imgs/shopping-cart.svg"
-                        alt=""
-                    />
-                    <p className="font-semibold text-xs">0</p>
-                </div>
-                <div>
-                    <button>Home</button>
-                    <button>Products</button>
-                    <button>Story</button>
-                    <button>Contact</button>
-                    <button>Privacy</button>
-                </div>
-            </nav>
+            {/*<nav className="xl:hidden h-40 border-red-500 border-2 flex justify-between w-[90%]  absolute z-20">*/}
+            {/*    <div>*/}
+            {/*        <button><Link href="/"><img className="w-28" src="/imgs/big-logo.png" alt=""/></Link></button>*/}
+            {/*    </div>*/}
+            {/*    <div className="flex flex-row items-center gap-x-2 justify-self-end">*/}
+            {/*        <img*/}
+            {/*            className="h-auto w-6"*/}
+            {/*            src="/imgs/shopping-cart.svg"*/}
+            {/*            alt=""*/}
+            {/*        />*/}
+            {/*        <p className="font-semibold text-xs">0</p>*/}
+            {/*    </div>*/}
+            {/*    <div>*/}
+            {/*        <button>Home</button>*/}
+            {/*        <button>Products</button>*/}
+            {/*        <button>Story</button>*/}
+            {/*        <button>Contact</button>*/}
+            {/*        <button>Privacy</button>*/}
+            {/*    </div>*/}
+            {/*</nav>*/}
         </>
     );
 }
