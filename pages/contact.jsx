@@ -127,7 +127,7 @@ export default function Contact() {
 
                     </div>
                 </div>
-                <div className="flex justify-center gap-x-52 mt-4 text-center">
+                <div className="flex justify-center gap-x-52 mt-4  text-center">
                     <div className="flex flex-col  gap-y-6 mb-4 mt-6 ml-10 text-2xl drop-shadow-xl">
 
                         <p>FAQ</p>
