@@ -52,16 +52,28 @@ function Home({products}) {
                          className="relative z-1 w-[90vw] max-h-[90vh] border-2 border-white rounded-3xl"/>
                     {/*<h1 className="absolute z-10 text-[54px] pt-[25%] pl-[5%]">Welcome text here</h1>*/}
                 </div>
-                <div
-                    className="relative z-15 xl:w-[70%] lg:w-[80%] md:[90%] mx-auto mt-[15em] flex  shadow-xl border-2 border-transparent rounded-3xl">
-                    <img src="/imgs/hmgoepprod.jpg"
-                         className="border border-transparent rounded-3xl max-h-[70vh]"/>
-                    <div className="h-[100%] flex flex-col ml-40">
-                        <h3 className="text-[5em]">Black T-shirt</h3>
-                        <p className="text-2xl mt-4 w-[70%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque
-                            cupiditate, debitis dignissimos dolorem laboriosam non nulla qui similique sit? Cupiditate
-                            magnam nam totam. Exercitationem ipsum molestiae placeat sequi tenetur!</p>
-                        <button className="btn btn-primary mt-20 self-start text-xl px-10 ">Buy Now</button>
+                {/*<div*/}
+                {/*    className="relative z-15 xl:w-[70%] lg:w-[80%] md:[90%] mx-auto mt-[15em] flex shadow-2xl border-2 border-transparent rounded-3xl">*/}
+                {/*    <img src="/imgs/hmgoepprod.jpg"*/}
+                {/*         className="border-0 border-transparent rounded-3xl max-h-[70vh] p-6 "/>*/}
+                {/*    <div className="h-[100%] flex flex-col ml-40">*/}
+                {/*        <h3 className="text-[5em]">Black T-shirt</h3>*/}
+                {/*        <p className="text-2xl mt-4 w-[70%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque*/}
+                {/*            cupiditate, debitis dignissimos dolorem laboriosam non nulla qui similique sit? Cupiditate*/}
+                {/*            magnam nam totam. Exercitationem ipsum molestiae placeat sequi tenetur!</p>*/}
+                {/*        <button className="btn btn-primary mt-20 self-start text-xl px-10 ">Buy Now</button>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
+                <div className="card lg:card-side bg-base-100 shadow-2xl mt-[15em] xl:w-[60vw] mx-auto sm:w-80">
+                    <figure><img className="xl:max-h-[70vh] min-h-[50vh]" src="/imgs/hmgoepprod.jpg" alt="Album"/></figure>
+                    <div className="card-body">
+                        <h3 className="card-title pr-3">New album is released and nowhere!</h3>
+                        <p className="xl:w-[70%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut blanditiis
+                            consequuntur deserunt dolores, earum harum illum libero nemo officia perferendis
+                            perspiciatis placeat quia, quisquam reiciendis repellat repellendus similique suscipit.</p>
+                        <div className="card-actions justify-end">
+                            <button className="btn btn-primary">Latest drops</button>
+                        </div>
                     </div>
                 </div>
             </section>
