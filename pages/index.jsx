@@ -46,7 +46,7 @@ function Home({products}) {
                     </p>
                 </div>
             </section>
-            <section className="xl:visible mb-5">
+            <section className="xl:visible mb-5 relative">
                 <div className="mx-auto w-[90%] h-auto mt-6 relative z-15">
                     <img src="/imgs/title-image.jpeg" alt="Shoes"
                          className="relative z-1 w-[90vw] max-h-[90vh] border-2 border-white rounded-3xl"/>
@@ -65,10 +65,12 @@ function Home({products}) {
                 {/*    </div>*/}
                 {/*</div>*/}
                 <div className="card lg:card-side bg-base-100 shadow-2xl mt-[15em] xl:w-[60vw] mx-auto sm:w-80">
-                    <figure><img className="xl:max-h-[70vh] min-h-[50vh]" src="/imgs/hmgoepprod.jpg" alt="Album"/></figure>
+                    <figure><img className="xl:max-h-[70vh] min-h-[50vh]" src="/imgs/hmgoepprod.jpg" alt="Album"/>
+                    </figure>
                     <div className="card-body">
                         <h3 className="card-title pr-3">New album is released and nowhere!</h3>
-                        <p className="xl:w-[70%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut blanditiis
+                        <p className="xl:w-[70%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                            aut blanditiis
                             consequuntur deserunt dolores, earum harum illum libero nemo officia perferendis
                             perspiciatis placeat quia, quisquam reiciendis repellat repellendus similique suscipit.</p>
                         <div className="card-actions justify-end">

@@ -20,7 +20,7 @@ export const CardProduct = (props) => {
 
 export const CardProductMini = (props) => {
   return (
-    <div className="w-64 mx-1 mt-10 card card-compact bg-base-100 shadow-xl ${props.margin}">
+    <div className="w-64 mx-1 mt-10 card card-compact bg-base-100 shadow-xl">
       <figure>
         <img src={props.image} />
       </figure>

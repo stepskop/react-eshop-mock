@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b63ee39a-c68e-4902-9f98-19fb1b0bd3c4" name="Changes" comment="">
+    <list default="true" id="b63ee39a-c68e-4902-9f98-19fb1b0bd3c4" name="Changes" comment="privacy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Policy.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Policy.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/privacy.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/privacy.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles/app.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +29,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pitra/Desktop/react-rest-api&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pitra/Desktop/my-project&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -52,11 +50,19 @@
       <updated>1674900208030</updated>
       <workItem from="1674900209137" duration="20408000" />
       <workItem from="1675176296765" duration="4347000" />
-      <workItem from="1675431420125" duration="2025000" />
+      <workItem from="1675431420125" duration="3861000" />
+      <workItem from="1675590819227" duration="11000" />
+      <workItem from="1675595295054" duration="36000" />
+      <workItem from="1675961074319" duration="835000" />
+      <workItem from="1676205267086" duration="2469000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="privacy" />
+    <option name="LAST_COMMIT_MESSAGE" value="privacy" />
   </component>
 </project>

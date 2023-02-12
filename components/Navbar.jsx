@@ -45,6 +45,19 @@ export default function Navbar() {
                     <p className="font-semibold text-xs">0</p>
                 </div>
             </nav>
+            <nav
+                className="w-[90%] mx-auto border-2 border-white rounded-2xl shadow-xl flex items-center justify-between px-10 h-20 relative top-2 bg-white z-100">
+                <div>
+                    <button><Link href="/"><img className="w-32" src="/imgs/big-logo.png" alt=""/></Link></button>
+                </div>
+                <div className="flex items-start ">
+                    <button className="-rotate-90"><Link href="/">Home</Link></button>
+                    <button className="-rotate-90"><Link href="/products">Products</Link></button>
+                    <button className="-rotate-90"><Link href="/story">Story</Link></button>
+                    <button className="-rotate-90"><Link href="/contact">Contact</Link></button>
+                    <button className="-rotate-90"><Link href="/privacy">Privacy</Link></button>
+                </div>
+            </nav>
             {/*<nav className="xl:hidden h-40 border-red-500 border-2 flex justify-between w-[90%]  absolute z-20">*/}
             {/*    <div>*/}
             {/*        <button><Link href="/"><img className="w-28" src="/imgs/big-logo.png" alt=""/></Link></button>*/}
