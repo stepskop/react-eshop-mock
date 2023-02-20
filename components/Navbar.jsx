@@ -46,7 +46,7 @@ export default function Navbar() {
                 </div>
             </nav>
             <nav
-                className="w-[90%] mx-auto border-2 border-white rounded-2xl shadow-xl flex items-center justify-between px-10 h-20 relative top-2 bg-white z-100">
+                className="w-[90%] mx-auto mb-[4em] border-2 border-white rounded-2xl shadow-xl flex items-center justify-between px-10 h-20 relative top-2 bg-white z-100">
                 <div>
                     <button><Link href="/"><img className="w-32" src="/imgs/big-logo.png" alt=""/></Link></button>
                 </div>

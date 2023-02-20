@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 
 export default function Contact() {
     return (
@@ -140,29 +141,30 @@ export default function Contact() {
                 </div>
 
             </section>
-            <footer className="mt-20 my-4 p-3 border-2 border-white rounded-2xl w-80 mx-auto ">
-                <div className="">
+            <Footer></Footer>
+            {/*<footer className="mt-20 my-4 p-3 border-2 border-white rounded-2xl w-80 mx-auto ">*/}
+            {/*    <div className="">*/}
 
-                    <p className="opacity-60">Copyright © 2022 Blendade</p>
-                </div>
-                <div className="flex flex-row gap-x-1 flex-wrap opacity-75">
-                    <p className=" border-r border-gray-300 pr-2 mr-2">
-                        <button>Privacy Policy</button>
-                    </p>
-                    <p className=" border-r border-gray-300 pr-2 mr-2">
-                        <button>Terms of Use</button>
-                    </p>
-                    <p className=" border-r border-gray-300 pr-2 mr-2">
-                        <button>Refunds</button>
-                    </p>
-                    <p className=" border-r border-gray-300 pr-2 mr-2">
-                        <button>Credits</button>
-                    </p>
-                    <p className="">
-                        <button>Legal</button>
-                    </p>
-                </div>
-            </footer>
+            {/*        <p className="opacity-60">Copyright © 2022 Blendade</p>*/}
+            {/*    </div>*/}
+            {/*    <div className="flex flex-row gap-x-1 flex-wrap opacity-75">*/}
+            {/*        <p className=" border-r border-gray-300 pr-2 mr-2">*/}
+            {/*            <button>Privacy Policy</button>*/}
+            {/*        </p>*/}
+            {/*        <p className=" border-r border-gray-300 pr-2 mr-2">*/}
+            {/*            <button>Terms of Use</button>*/}
+            {/*        </p>*/}
+            {/*        <p className=" border-r border-gray-300 pr-2 mr-2">*/}
+            {/*            <button>Refunds</button>*/}
+            {/*        </p>*/}
+            {/*        <p className=" border-r border-gray-300 pr-2 mr-2">*/}
+            {/*            <button>Credits</button>*/}
+            {/*        </p>*/}
+            {/*        <p className="">*/}
+            {/*            <button>Legal</button>*/}
+            {/*        </p>*/}
+            {/*    </div>*/}
+            {/*</footer>*/}
         </>
     );
 }
