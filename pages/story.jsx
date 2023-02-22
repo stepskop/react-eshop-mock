@@ -26,6 +26,16 @@ export default function Story() {
                         molestiae fugiat?
                     </p>
                 </div>
+                <div>
+                    <div>
+                        <img src="../public/imgs/animoji-black.jpeg"/>
+                        <h3>David Pitra</h3>
+                    </div>
+                    <div>
+                        <img src="../public/imgs/animoji-black.jpeg"/>
+                        <h3>Štěpán Škopek</h3>
+                    </div>
+                </div>
                 <div
                     className="border-2 border-white rounded-2xl shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] w-80 mx-auto mt-12 p-3 px-4">
                     <h2 className="text-xl pb-3">And Him</h2>
