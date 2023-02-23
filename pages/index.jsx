@@ -46,10 +46,10 @@ function Home({products}) {
                     </p>
                 </div>
             </section>
-            <section className="xl:visible mb-5 relative">
-                <div className="mx-auto w-[90%] h-auto mt-6 relative z-15">
+            <section className="xl:visible mb-5 relative ">
+                <div className="mx-auto w-[90%] h-auto mt-6 relative z-15 ">
                     <img src="/imgs/title-image.jpeg" alt="Shoes"
-                         className="relative z-1 w-[90vw] max-h-[90vh] border-2 border-white rounded-3xl"/>
+                         className="relative z-1 w-[90vw] max-h-[90vh] border-2 border-white rounded-3xl shadow-xl "/>
                     {/*<h1 className="absolute z-10 text-[54px] pt-[25%] pl-[5%]">Welcome text here</h1>*/}
                 </div>
                 {/*<div*/}

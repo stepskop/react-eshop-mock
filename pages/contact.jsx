@@ -10,8 +10,7 @@ export default function Contact() {
                         How to contact us?
                     </h1>
                 </div>
-
-                <div className="mx-auto mt-4 border rounded-2xl">
+                <div className="mx-auto mt-4 border rounded-2xl lg:mt-20 lg:w-[40em]">
                     <div className="w-full relative flex items-center justify-center rounded-2xl">
                         <div
                             className="py-4 w-full px-4 flex flex-col items-center justify-center relative z-40 rounded-2xl text-black">
@@ -49,36 +48,36 @@ export default function Contact() {
                     </div>
                 </div>
             </section>
-            <footer className="mt-4 my-4 p-3 border-2 border-white rounded-2xl w-80 mx-auto xl:hidden">
-                <div className="">
+            {/*<footer className="mt-4 my-4 p-3 border-2 border-white rounded-2xl w-80 mx-auto xl:hidden">*/}
+            {/*    <div className="">*/}
 
-                    <p className="opacity-60">Copyright © 2022 Blendade</p>
-                </div>
-                <div className="flex flex-row gap-x-1 flex-wrap opacity-75">
-                    <p className=" border-r border-gray-300 pr-2 mr-2">
-                        <button>Privacy Policy</button>
-                    </p>
-                    <p className=" border-r border-gray-300 pr-2 mr-2">
-                        <button>Terms of Use</button>
-                    </p>
-                    <p className=" border-r border-gray-300 pr-2 mr-2">
-                        <button>Refunds</button>
-                    </p>
-                    <p className=" border-r border-gray-300 pr-2 mr-2">
-                        <button>Credits</button>
-                    </p>
-                    <p className="">
-                        <button>Legal</button>
-                    </p>
-                </div>
-            </footer>
+            {/*        <p className="opacity-60">Copyright © 2022 Blendade</p>*/}
+            {/*    </div>*/}
+            {/*    <div className="flex flex-row gap-x-1 flex-wrap opacity-75">*/}
+            {/*        <p className=" border-r border-gray-300 pr-2 mr-2">*/}
+            {/*            <button>Privacy Policy</button>*/}
+            {/*        </p>*/}
+            {/*        <p className=" border-r border-gray-300 pr-2 mr-2">*/}
+            {/*            <button>Terms of Use</button>*/}
+            {/*        </p>*/}
+            {/*        <p className=" border-r border-gray-300 pr-2 mr-2">*/}
+            {/*            <button>Refunds</button>*/}
+            {/*        </p>*/}
+            {/*        <p className=" border-r border-gray-300 pr-2 mr-2">*/}
+            {/*            <button>Credits</button>*/}
+            {/*        </p>*/}
+            {/*        <p className="">*/}
+            {/*            <button>Legal</button>*/}
+            {/*        </p>*/}
+            {/*    </div>*/}
+            {/*</footer>*/}
             <section className="w-[80%] mx-auto">
                 <div className="mt-4">
                     <h1 className="text-3xl drop-shadow-xl text-center">
                         How to contact us?
                     </h1>
                 </div>
-                <div className="mx-auto mt-20 border rounded-2xl w-[40em] h-[]">
+                <div className="mx-auto mt-20 border rounded-2xl w-[40em]">
                     <div className="w-full relative flex items-center justify-center rounded-2xl">
                         <div
                             className="py-4 w-full px-4 flex flex-col items-center justify-center relative z-40 rounded-2xl text-black">
@@ -119,24 +118,20 @@ export default function Contact() {
                 </div>
                 <div className="flex justify-center gap-x-52 mt-20 text-center">
                     <div className="flex flex-col  gap-y-6 mb-4 mt-6 ml-10 text-2xl drop-shadow-xl">
-
                         <p>Product</p>
                         <p>Gift card</p>
                         <p>Shipping</p>
                         <p>Returns</p>
                         <p>My account</p>
-
                     </div>
                 </div>
                 <div className="flex justify-center gap-x-52 mt-4  text-center">
                     <div className="flex flex-col  gap-y-6 mb-4 mt-6 ml-10 text-2xl drop-shadow-xl">
-
                         <p>FAQ</p>
                         <p>Privacy</p>
                         <p>Cookies</p>
                         <p>Terms of Use</p>
                         <p>Credits</p>
-
                     </div>
                 </div>
 

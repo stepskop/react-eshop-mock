@@ -7,7 +7,7 @@ export default function Navbar() {
     return (
         <>
             <nav
-                className="w-80 flex justify-around flex-row items-center mx-auto border-2 border-white rounded-2xl shadow-xl xl:hidden">
+                className="w-80 flex justify-around flex-row items-center mx-auto border-2 border-white rounded-2xl shadow-xl lg:hidden">
                 <div>
                     <input type="checkbox" id="overlay-input" defaultChecked={false}/>
                     <label htmlFor="overlay-input" id="overlay-button">
@@ -50,12 +50,12 @@ export default function Navbar() {
                 <div>
                     <button><Link href="/"><img className="w-32" src="/imgs/big-logo.png" alt=""/></Link></button>
                 </div>
-                <div className="flex items-start ">
-                    <button className="-rotate-90"><Link href="/">Home</Link></button>
-                    <button className="-rotate-90"><Link href="/products">Products</Link></button>
-                    <button className="-rotate-90"><Link href="/story">Story</Link></button>
-                    <button className="-rotate-90"><Link href="/contact">Contact</Link></button>
-                    <button className="-rotate-90"><Link href="/privacy">Privacy</Link></button>
+                <div className="flex items-start gap-x-5 font-bold ">
+                    <button className=""><Link href="/">Home</Link></button>
+                    <button className=""><Link href="/products">Products</Link></button>
+                    <button className=""><Link href="/story">Story</Link></button>
+                    <button className=""><Link href="/contact">Contact</Link></button>
+                    <button className=""><Link href="/privacy">Privacy</Link></button>
                 </div>
             </nav>
             {/*<nav className="xl:hidden h-40 border-red-500 border-2 flex justify-between w-[90%]  absolute z-20">*/}
