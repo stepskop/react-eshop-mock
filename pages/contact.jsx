@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 export default function Contact() {
     return (
         <>
-            <section className="welcome w-80 mx-auto mt-4 pb-4 xl:hidden">
+            <section className="welcome w-80 mx-auto mt-4 pb-4 lg:hidden">
                 <div className="mt-4">
                     <h1 className="text-3xl drop-shadow-xl text-center">
                         How to contact us?
@@ -73,11 +73,11 @@ export default function Contact() {
             {/*</footer>*/}
             <section className="w-[80%] mx-auto">
                 <div className="mt-4">
-                    <h1 className="text-3xl drop-shadow-xl text-center">
+                    <h1 className="text-4xl drop-shadow-xl text-center">
                         How to contact us?
                     </h1>
                 </div>
-                <div className="mx-auto mt-20 border rounded-2xl w-[40em]">
+                <div className="mx-auto mt-20 border border-white rounded-2xl w-[40em] shadow-xl">
                     <div className="w-full relative flex items-center justify-center rounded-2xl">
                         <div
                             className="py-4 w-full px-4 flex flex-col items-center justify-center relative z-40 rounded-2xl text-black">
@@ -97,9 +97,9 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
-
-                <div className="flex justify-center gap-x-52 mt-20">
-                    <div className="flex flex-row gap-y-6 mb-4 mt-6 ml-10 text-2xl drop-shadow-xl">
+                <div
+                    className="flex justify-center gap-x-52 mt-20 w-fit mx-auto border-2 border-white rounded-2xl shadow-lg p-10">
+                    <div className="flex flex-row gap-y-6 mb-4 mt-6 ml-10 text-2xl ">
                         <div className=" pb-2 ">
                             <h6 className="font-bold text-3xl pb-2">Follow us on</h6>
                             <p>Instagram</p>
@@ -117,16 +117,12 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className="flex justify-center gap-x-52 mt-20 text-center">
-                    <div className="flex flex-col  gap-y-6 mb-4 mt-6 ml-10 text-2xl drop-shadow-xl">
+                    <div
+                        className="flex flex-col  gap-y-6 mb-4 mt-6 ml-10 text-2xl border-2 border-gray-100 rounded-2xl p-10 ">
                         <p>Product</p>
                         <p>Gift card</p>
                         <p>Shipping</p>
                         <p>Returns</p>
-                        <p>My account</p>
-                    </div>
-                </div>
-                <div className="flex justify-center gap-x-52 mt-4  text-center">
-                    <div className="flex flex-col  gap-y-6 mb-4 mt-6 ml-10 text-2xl drop-shadow-xl">
                         <p>FAQ</p>
                         <p>Privacy</p>
                         <p>Cookies</p>
@@ -134,12 +130,10 @@ export default function Contact() {
                         <p>Credits</p>
                     </div>
                 </div>
-
             </section>
             <Footer></Footer>
             {/*<footer className="mt-20 my-4 p-3 border-2 border-white rounded-2xl w-80 mx-auto ">*/}
             {/*    <div className="">*/}
-
             {/*        <p className="opacity-60">Copyright © 2022 Blendade</p>*/}
             {/*    </div>*/}
             {/*    <div className="flex flex-row gap-x-1 flex-wrap opacity-75">*/}
