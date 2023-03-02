@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {CardProduct} from "../components/Card";
+import {CardProduct, CardProductBig} from "../components/Card";
 import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
 import Link from "next/link"
@@ -64,20 +64,7 @@ function Home({products}) {
                 {/*        <button className="btn btn-primary mt-20 self-start text-xl px-10 ">Buy Now</button>*/}
                 {/*    </div>*/}
                 {/*</div>*/}
-                <div className="card lg:card-side bg-base-100 shadow-2xl mt-[15em] xl:w-[60vw] mx-auto sm:w-80">
-                    <figure><img className="xl:max-h-[70vh] min-h-[50vh]" src="/imgs/hmgoepprod.jpg" alt="Album"/>
-                    </figure>
-                    <div className="card-body">
-                        <h3 className="card-title pr-3">New album is released and nowhere!</h3>
-                        <p className="xl:w-[70%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-                            aut blanditiis
-                            consequuntur deserunt dolores, earum harum illum libero nemo officia perferendis
-                            perspiciatis placeat quia, quisquam reiciendis repellat repellendus similique suscipit.</p>
-                        <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Latest drops</button>
-                        </div>
-                    </div>
-                </div>
+                <CardProductBig/>
             </section>
             <Footer/>
         </>

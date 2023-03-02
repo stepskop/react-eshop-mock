@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b63ee39a-c68e-4902-9f98-19fb1b0bd3c4" name="Changes" comment="privacy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +26,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pitra/Desktop/my-project&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Documents/personal-webs/dictionary-english&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -57,7 +58,12 @@
       <workItem from="1676915600065" duration="5033000" />
       <workItem from="1677048013472" duration="4555000" />
       <workItem from="1677180623055" duration="3245000" />
-      <workItem from="1677255871217" duration="984000" />
+      <workItem from="1677255871217" duration="2646000" />
+      <workItem from="1677314905597" duration="598000" />
+      <workItem from="1677425811659" duration="1450000" />
+      <workItem from="1677508810275" duration="608000" />
+      <workItem from="1677514361721" duration="2920000" />
+      <workItem from="1677693777403" duration="2748000" />
     </task>
     <servers />
   </component>

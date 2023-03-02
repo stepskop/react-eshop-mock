@@ -50,7 +50,16 @@ export default function Navbar() {
                 <div>
                     <button><Link href="/"><img className="w-32" src="/imgs/big-logo.png" alt=""/></Link></button>
                 </div>
+
                 <div className="flex items-start gap-x-5 font-bold ">
+                    <div className="flex flex-row items-center gap-x-2 ">
+                        <img
+                            className="h-auto w-6"
+                            src="/imgs/shopping-cart.svg"
+                            alt=""
+                        />
+                        <p className="font-semibold text-xs">0</p>
+                    </div>
                     <button className=""><Link href="/">Home</Link></button>
                     <button className=""><Link href="/products">Products</Link></button>
                     <button className=""><Link href="/story">Story</Link></button>

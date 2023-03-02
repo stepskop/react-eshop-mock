@@ -34,3 +34,34 @@ export const CardProductMini = (props) => {
     </div>
   );
 };
+
+
+
+export const CardProductBig = () => {
+    return (
+        <div className="card lg:card-side bg-base-100 shadow-2xl mt-[15em] xl:w-[60vw] mx-auto sm:w-80">
+                    <figure><img className="xl:max-h-[70vh] W-[50%]" src="/imgs/hmgoepprod.jpg" alt="Album"/>
+                    </figure>
+                    <div className="card-body w-[70%]">
+                        <h3 className="card-title pr-3">New album is released and nowhere!</h3>
+                        <p className="w-[70%] pt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                            aut blanditiis
+                            consequuntur deserunt dolndis repellat repellendus similique suscipit.
+                        </p>
+                        <p className="w-[70%] ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                            aut blanditiis
+                            consequuntur deseciendis repellat repellendus similique suscipit.
+                        </p>
+                        <p className="w-[70%] ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                            aut blanditiuia, quisquam reiciendis repellat repellendus similique suscipit.
+                        </p>
+                        <div className="card-actions justify-end">
+                            <button className="btn btn-primary">Latest drops</button>
+                        </div>
+                    </div>
+                </div>
+    );
+};
+
+
+

@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
+import {CardProductBig} from "../components/Card";
 
 export default function Story() {
     return (
@@ -126,20 +127,7 @@ export default function Story() {
                         molestiae fugiat?
                     </p>
                 </div>
-                <div className="card lg:card-side bg-base-100 shadow-2xl mt-[10em] xl:w-[60vw] mx-auto sm:w-80">
-                    <figure><img className="xl:max-h-[70vh] min-h-[50vh]" src="/imgs/hmgoepprod.jpg" alt="Album"/>
-                    </figure>
-                    <div className="card-body">
-                        <h3 className="card-title pr-3">New album is released and nowhere!</h3>
-                        <p className="xl:w-[70%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-                            aut blanditiis
-                            consequuntur deserunt dolores, earum harum illum libero nemo officia perferendis
-                            perspiciatis placeat quia, quisquam reiciendis repellat repellendus similique suscipit.</p>
-                        <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Latest drops</button>
-                        </div>
-                    </div>
-                </div>
+                <CardProductBig/>
             </section>
             <Footer></Footer>
         </>
