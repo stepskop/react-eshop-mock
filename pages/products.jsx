@@ -1,11 +1,11 @@
 import React from "react";
 import Footer from "../components/Footer.jsx";
-import {CardProduct, CardProductMini} from "../components/Card";
+import {CardProduct, CardProductBig, CardProductMini} from "../components/Card";
 
 export default function Products() {
     return (
         <>
-            <section className="w-80 mx-auto">
+            <section className="w-80 mx-auto lg:w-[70%]">
                 <div className="mt-6 flex gap-x-2">
                     <button
                         className="rounded-[10px] bg-[#ffb7c1] px-6 py-[2px] hover:bg-[#ca858ec7] hover:ease-in-out hover:duration-200 active:scale-90 active:ease-in-out active:duration-200">
@@ -31,7 +31,7 @@ export default function Products() {
                         desc="you lookin' for something easy and special?"
                     ></CardProductMini>
                 </div>
-                <div>
+                <div className="lg:hidden">
                     <div className="card w-80 mt-10 mx-auto bg-base-100 shadow-xl">
                         <div className="card-body">
                             <h2 className="card-title">Shoes!</h2>
@@ -54,7 +54,7 @@ export default function Products() {
                         desc="you lookin' for something easy and special?"
                     ></CardProductMini>
                 </div>
-                <div>
+                <div  className="lg:hidden">
                     <div className="card w-80 mt-10 mx-auto bg-base-100 shadow-xl">
                         <div className="card-body">
                             <h2 className="card-title">Shoes!</h2>
@@ -64,6 +64,9 @@ export default function Products() {
                             <img src="/imgs/hmgoepprod.jpg" alt="Shoes"/>
                         </figure>
                     </div>
+                </div>
+                <div className="hidden lg:visible">
+                    <CardProductBig/>
                 </div>
                 <div className="flex flex-row">
                     <CardProductMini
