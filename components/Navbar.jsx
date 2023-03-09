@@ -7,7 +7,7 @@ export default function Navbar() {
     return (
         <>
             <nav
-                className="lg:w-[72rem] max-w-[97vw] md:w-[32rem] w-80 flex justify-around flex-row items-center mx-auto border-2 border-white rounded-2xl shadow-xl h-[55px]">
+                className="lg:w-[72rem] max-w-[97vw] md:w-[45rem] w-80 flex justify-around flex-row items-center mx-auto border-2 border-white rounded-2xl shadow-xl h-[55px]">
                 <div className="lg:hidden">
                     <input type="checkbox" id="overlay-input" defaultChecked={false}/>
                     <label htmlFor="overlay-input" id="overlay-button">
@@ -46,7 +46,7 @@ export default function Navbar() {
                     <p className="font-semibold text-xs">0</p>
                 </div>
 
-                <div className="hidden items-start gap-x-5 font-bold lg:flex">
+                <div className="hidden navText items-start gap-x-5 font-bold lg:flex">
                     
                     <button className=""><Link href="/">Home</Link></button>
                     <button className=""><Link href="/products">Products</Link></button>

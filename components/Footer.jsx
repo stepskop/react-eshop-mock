@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <>
             <footer
-                className="lg:w-[72rem] max-w-[97vw] md:w-[32rem] w-80  mx-auto mb-4 border-2 border-white rounded-2xl shadow-xl p-6 mt-[14em] flex flex-row justify-around">
+                className="lg:w-[72rem] max-w-[97vw] md:w-[45rem] w-80 mx-auto mb-4 border-2 border-white rounded-2xl shadow-xl p-6 mt-[14em] flex flex-row justify-around">
                 <div className="flex flex-col justify-between mr-4">
                     <div className="flex items-center flex-col">
                         <button><Link href="/"><img className="w-48" src="/imgs/big-logo.png" alt=""/></Link></button>

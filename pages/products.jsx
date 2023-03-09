@@ -1,11 +1,11 @@
 import React from "react";
 import Footer from "../components/Footer.jsx";
-import {CardProduct, CardProductBig, CardProductMini} from "../components/Card";
+import {CardProduct, CardProductBig, CardProductMini, CardProductMedium, CardProductLopsided} from "../components/Card";
 
 export default function Products() {
     return (
         <>
-            <section className="flex flex-col items-center">
+            <section className="flex flex-col items-center gap-7">
                 <div className="lg:w-[72rem] max-w-[97vw] md:w-[32rem] w-80 mt-6 flex gap-x-2">
                     <button
                         className="rounded-[10px] bg-[#ffb7c1] px-6 py-[2px] hover:bg-[#ca858ec7] hover:ease-in-out hover:duration-200 active:scale-90 active:ease-in-out active:duration-200">
@@ -18,62 +18,30 @@ export default function Products() {
                 </div>
 
 
-                <div className="flex justify-center mt-6 w-80">
+                <div className="flex justify-center w-80">
                     <h1 className="text-4xl lg:text-5xl border-b-2 border-black w-fit">Man T-shirts</h1>
                 </div>
-                <div className="flex flex-row justify-center">
+                <div className="flex flex-col md:flex-row justify-center gap-7 lg:mx-5">
                     
-                    <div className="card lg:card-side bg-base-100 shadow-xl w-64 lg:w-[45%] mt-20">
-                        <figure><img src="/imgs/hmgoepprod.jpg" alt="Album"/></figure>
-                        <div className="card-body pl-0">
-                            <h2 className="card-title">New album is released!</h2>
-                            <p>Click the button to listen on Spotiwhy app.</p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Listen</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card lg:card-side bg-base-100 shadow-xl w-64 lg:w-[45%] mt-20">
-                        <figure><img src="/imgs/hmgoepprod.jpg" alt="Album"/></figure>
-                        <div className="card-body">
-                            <h2 className="card-title">New album is released!</h2>
-                            <p>Click the button to listen on Spotiwhy app.</p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Listen</button>
-                            </div>
-                        </div>
-                    </div>
+
+                    <CardProductMedium title="New album is released!" desc="Click the button to listen on Spotiwhy app." btnText="Learn more"/>
+
+                    <CardProductMedium title="New album is released!" desc="Click the button to listen on Spotiwhy app." btnText="Learn more"/>
                     
-                </div>
-                <div className="lg:hidden">
-                    <div className="card w-80 mt-10 mx-auto bg-base-100 shadow-xl">
-                        <div className="card-body">
-                            <h2 className="card-title">Shoes!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                        </div>
-                        <figure>
-                            <img src="/imgs/hmgoepprod.jpg" alt="Shoes"/>
-                        </figure>
-                    </div>
                 </div>
                 
-                <div className="lg:hidden">
-                    <div className="card w-80 mt-10 mx-auto bg-base-100 shadow-xl">
-                        <div className="card-body">
-                            <h2 className="card-title">Shoes!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                        </div>
-                        <figure>
-                            <img src="/imgs/hmgoepprod.jpg" alt="Shoes"/>
-                        </figure>
-                    </div>
+
+
+                <div className="flex flex-col md:flex-row gap-7">
+                    <CardProductLopsided title="Shoes!" desc="If a dog chews shoes whose shoes does he choose?" image="/imgs/hmgoepprod.jpg"/>
+                    <CardProductLopsided title="Shoes!" desc="If a dog chews shoes whose shoes does he choose?" image="/imgs/hmgoepprod.jpg"/>
                 </div>
 
-                <div className="">
+                <div className="hidden lg:flex">
                     <CardProductBig/>
                 </div>
 
-                <div className="flex flex-row flex-wrap justify-center mt-20 ">
+                <div className="flex flex-row flex-wrap justify-center gap-8 mx-7">
                     <CardProductMini
                         image="/imgs/hmgoepprod.jpg"
                        title="basic black"

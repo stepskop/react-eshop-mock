@@ -20,7 +20,7 @@ export const CardProduct = (props) => {
 
 export const CardProductMini = (props) => {
   return (
-    <div className="h-max w-56 mx-1 mt-10 card card-compact bg-base-100 shadow-xl">
+    <div className="h-max w-56 mx-1 card card-compact bg-base-100 shadow-xl">
       <figure>
         <img src={props.image}/>
       </figure>
@@ -35,11 +35,38 @@ export const CardProductMini = (props) => {
   );
 };
 
-
-
-export const CardProductBig = () => {
+export const CardProductMedium = (props) => {
+  return (
+    <div class="card lg:card-side bg-base-100 w-80 lg:w-auto lg:max-w-[35rem] shadow-xl">
+  <figure><img src="/imgs/hmgoepprod.jpg" alt="Album"/></figure>
+  <div class="card-body">
+    <h2 class="card-title">New album is released!</h2>
+    <p>Click the button to listen on Spotiwhy app.</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Listen</button>
+    </div>
+  </div>
+</div>
+  )
+}
+export const CardProductLopsided = (props) => {
+  return (
+    <div className="">
+      <div className="card w-80 mx-auto bg-base-100 shadow-xl">
+        <div className="card-body">
+          <h2 className="card-title">{props.title}</h2>
+          <p>{props.desc}</p>
+        </div>
+        <figure>
+          <img src={props.image} alt="Shoes" />
+        </figure>
+      </div>
+    </div>
+  )
+}
+export const CardProductBig = (props) => {
     return (
-        <div className="flex justify-center card lg:card-side bg-base-100 shadow-2xl lg:w-[64rem] sm:w-80">
+        <div className="flex justify-center card lg:card-side bg-base-100 shadow-2xl lg:w-[60rem]">
             <figure>
               <img className="xl:max-h-[70vh] W-[50%]" src="/imgs/hmgoepprod.jpg" alt="Album"/>
             </figure>
