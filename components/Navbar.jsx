@@ -7,8 +7,8 @@ export default function Navbar() {
     return (
         <>
             <nav
-                className="w-80 flex justify-around flex-row items-center mx-auto border-2 border-white rounded-2xl shadow-xl lg:hidden">
-                <div>
+                className="lg:w-[72rem] max-w-[97vw] md:w-[32rem] w-80 flex justify-around flex-row items-center mx-auto border-2 border-white rounded-2xl shadow-xl h-[55px]">
+                <div className="lg:hidden">
                     <input type="checkbox" id="overlay-input" defaultChecked={false}/>
                     <label htmlFor="overlay-input" id="overlay-button">
                         <span></span>
@@ -32,11 +32,12 @@ export default function Navbar() {
                             </li>
                         </ul>
                     </div>
+                    
                 </div>
                 <div>
                     <button><Link href="/"><img className="w-28" src="/imgs/big-logo.png" alt=""/></Link></button>
                 </div>
-                <div className="flex flex-row items-center gap-x-2 ">
+                <div className="lg:hidden flex flex-row items-center gap-x-2 ">
                     <img
                         className="h-auto w-6"
                         src="/imgs/shopping-cart.svg"
@@ -44,14 +45,14 @@ export default function Navbar() {
                     />
                     <p className="font-semibold text-xs">0</p>
                 </div>
-            </nav>
-            <nav
-                className="w-[90%] mx-auto mb-[4em] border-2 border-white rounded-2xl shadow-xl flex items-center justify-between px-10 h-20 relative top-2 bg-white z-100">
-                <div>
-                    <button><Link href="/"><img className="w-32" src="/imgs/big-logo.png" alt=""/></Link></button>
-                </div>
 
-                <div className="flex items-start gap-x-5 font-bold ">
+                <div className="hidden items-start gap-x-5 font-bold lg:flex">
+                    
+                    <button className=""><Link href="/">Home</Link></button>
+                    <button className=""><Link href="/products">Products</Link></button>
+                    <button className=""><Link href="/story">Story</Link></button>
+                    <button className=""><Link href="/contact">Contact</Link></button>
+                    <button className=""><Link href="/privacy">Privacy</Link></button>
                     <div className="flex flex-row items-center gap-x-2 ">
                         <img
                             className="h-auto w-6"
@@ -60,13 +61,9 @@ export default function Navbar() {
                         />
                         <p className="font-semibold text-xs">0</p>
                     </div>
-                    <button className=""><Link href="/">Home</Link></button>
-                    <button className=""><Link href="/products">Products</Link></button>
-                    <button className=""><Link href="/story">Story</Link></button>
-                    <button className=""><Link href="/contact">Contact</Link></button>
-                    <button className=""><Link href="/privacy">Privacy</Link></button>
                 </div>
             </nav>
+            
         </>
     );
 }

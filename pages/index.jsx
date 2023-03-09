@@ -10,13 +10,20 @@ function Home({products}) {
     let allImages = products.image
     return (
         <>
-            <section className="xl:hidden">
-                <div className="welcome text-center w-80 mx-auto mt-4">
+            <section className="flex flex-col gap-y-10">
+
+
+                <div className="welcome text-center w-80 xl:w-[72rem] lg:w-[48rem] md:w-[32rem] mx-auto mt-10 mb-0">
                     <div className="card bg-base-100 shadow-xl image-full">
-                        <figure className="grayscale-0">
-                            <img src="/imgs/title-image.jpeg" alt="Shoes"/>
-                        </figure>
-                        <div className="card-body">
+
+
+                        <div className="grayscale-0">
+                            <img className="rounded-[1rem]" src="/imgs/title-image.jpeg" alt="Shoes"/>
+                        </div>
+
+
+
+                        <div className="card-body mt-0">
                             <h1 className="card-title font-normal">Welcome to our site!</h1>
                             <p>We are simple brand with even simplier products</p>
                             <div className="card-actions justify-end">
@@ -25,14 +32,28 @@ function Home({products}) {
                         </div>
                     </div>
                 </div>
-                <CardProduct title={products.name} desc={products.desc} image={urlFor(allImages[0])}></CardProduct>
-                <div className="carousel flex flex-col justify-center mt-10">
-                    <Carousel images={allImages}></Carousel>
-                    <Link href="/products" className="btn btn-primary w-32 mx-auto mt-5" role="button">
-                        EXPLORE
-                    </Link>
+
+
+                <section className="hidden xl:flex justify-center">
+                    <CardProductBig/>
+                </section>
+
+                <div className="flex flex-col lg:flex-row items-center justify-center gap-5 mt-5">
+                    <CardProduct className="flex" title={products.name} desc={products.desc} image={urlFor(allImages[0])}></CardProduct>
+                    
+                    <div className="carousel flex flex-col justify-center">
+                        <Carousel images={allImages}/>
+                        <Link href="/products" className="btn btn-primary w-32 mx-auto mt-5" role="button">
+                            EXPLORE
+                        </Link>
+                    </div>
+
+                    <CardProduct imageCss="" className="flex" title={products.name} desc={products.desc} image={urlFor(allImages[1])}></CardProduct>
                 </div>
-                <div className="border-2 border-white rounded-2xl shadow-xl w-80 mx-auto mt-10 p-3 px-4">
+
+                
+
+                <div className="border-2 border-white rounded-2xl shadow-xl w-80 lg:w-[40rem] mx-auto mt-10 p-3 px-4">
                     <h3 className="pb-1.5 text-3xl">About us</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab
@@ -46,26 +67,8 @@ function Home({products}) {
                     </p>
                 </div>
             </section>
-            <section className="xl:visible mb-5 relative ">
-                <div className="mx-auto w-[90%] h-auto mt-6 relative z-15 ">
-                    <img src="/imgs/title-image.jpeg" alt="Shoes"
-                         className="relative z-1 w-[90vw] max-h-[90vh] border-2 border-white rounded-3xl shadow-xl "/>
-                    {/*<h1 className="absolute z-10 text-[54px] pt-[25%] pl-[5%]">Welcome text here</h1>*/}
-                </div>
-                {/*<div*/}
-                {/*    className="relative z-15 xl:w-[70%] lg:w-[80%] md:[90%] mx-auto mt-[15em] flex shadow-2xl border-2 border-transparent rounded-3xl">*/}
-                {/*    <img src="/imgs/hmgoepprod.jpg"*/}
-                {/*         className="border-0 border-transparent rounded-3xl max-h-[70vh] p-6 "/>*/}
-                {/*    <div className="h-[100%] flex flex-col ml-40">*/}
-                {/*        <h3 className="text-[5em]">Black T-shirt</h3>*/}
-                {/*        <p className="text-2xl mt-4 w-[70%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque*/}
-                {/*            cupiditate, debitis dignissimos dolorem laboriosam non nulla qui similique sit? Cupiditate*/}
-                {/*            magnam nam totam. Exercitationem ipsum molestiae placeat sequi tenetur!</p>*/}
-                {/*        <button className="btn btn-primary mt-20 self-start text-xl px-10 ">Buy Now</button>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
-                <CardProductBig/>
-            </section>
+            
+            
             <Footer/>
         </>
     );

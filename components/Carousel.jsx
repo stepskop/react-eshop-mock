@@ -29,7 +29,7 @@ export default function Carousel(props) {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        {props.images?.map(image => <SwiperSlide key={image._key}><img src={urlFor(image).url()}></img></SwiperSlide>)}
+        {props.images?.map(image => <SwiperSlide key={image._key}><img src={urlFor(image).url()} className="lg:h-[80]"></img></SwiperSlide>)}
       </Swiper>
     </>
   );
