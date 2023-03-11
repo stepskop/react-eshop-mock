@@ -20,9 +20,9 @@ function Home({products}) {
                             <img className="rounded-[1rem]" src="/imgs/title-image.jpeg" alt="Shoes"/>
                         </div>
 
-                        <div className="card-body mt-0 md:text-2xl lg:text-3xl xl:text-4xl">
-                            <h1 className="card-title md:text-3xl lg:text-4xl xl:text-5xl font-normal">Welcome to our site!</h1>
-                            <p>We are simple brand with even simplier products</p>
+                        <div className="card-body h-[100%] mt-0 md:text-2xl lg:text-3xl xl:text-4xl">
+                            <h1 className="card-title md:text-3xl lg:text-4xl xl:text-6xl font-normal text-[#f3aec1] uppercase lg:mt-[25%]">Welcome to our site!</h1>
+                            <p className="md:mt-4 lg:mt-8">We are simple brand with even simplier products</p>
                             <div className="card-actions justify-end">
                                 <button className="btn btn-primary">Latest drops</button>
                             </div>
