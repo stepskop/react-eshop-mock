@@ -15,16 +15,13 @@ function Home({products}) {
 
                 <div className="welcome text-center w-80 xl:w-[72rem] lg:w-[48rem] md:w-[32rem] mx-auto mt-10 mb-0">
                     <div className="card bg-base-100 shadow-xl image-full">
-
-
+                        
                         <div className="grayscale-0">
                             <img className="rounded-[1rem]" src="/imgs/title-image.jpeg" alt="Shoes"/>
                         </div>
 
-
-
-                        <div className="card-body mt-0">
-                            <h1 className="card-title font-normal">Welcome to our site!</h1>
+                        <div className="card-body mt-0 md:text-2xl lg:text-3xl xl:text-4xl">
+                            <h1 className="card-title md:text-3xl lg:text-4xl xl:text-5xl font-normal">Welcome to our site!</h1>
                             <p>We are simple brand with even simplier products</p>
                             <div className="card-actions justify-end">
                                 <button className="btn btn-primary">Latest drops</button>
