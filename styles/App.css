@@ -195,6 +195,10 @@ body {
   /* color: #000; */
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
   animation: bugfix infinite 1s;
   -webkit-animation: bugfix infinite 1s;
 }
@@ -204,7 +208,8 @@ body main {
 
 h1,
 h2,
-h3, .navText {
+h3,
+.navText {
   font-family: CustomFour;
 }
 
