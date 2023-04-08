@@ -26,17 +26,6 @@ export default function Products({ products }) {
     return (
         <>
             <section className="flex flex-col items-center gap-7 pt-6">
-                {/* <div className="lg:w-[72rem] max-w-[97vw] md:w-[32rem] w-80 mt-6 flex gap-x-2">
-                    <button
-                        className="rounded-[10px] bg-[#ffb7c1] px-6 py-[2px] hover:bg-[#ca858ec7] hover:ease-in-out hover:duration-200 active:scale-90 active:ease-in-out active:duration-200">
-                        Men
-                    </button>
-                    <button
-                        className="rounded-[10px] bg-[#ffb7c1] px-6 py-[2px] hover:bg-[#ca858ec7] hover:ease-in-out hover:duration-200 active:scale-90 active:ease-in-out active:duration-200">
-                        Women
-                    </button>
-                </div> */}
-
 
                 <div className="flex justify-center w-80">
                     <h1 className="text-4xl lg:text-5xl border-b-2 border-black w-fit">Our collection</h1>
@@ -52,16 +41,10 @@ export default function Products({ products }) {
                     <CardProductMedium image={imageFor(prod2)} 
                         title={prod2.name} 
                         desc={prod2.desc} 
-                        link={linkFor(prod1)} />
+                        link={linkFor(prod2)} />
 
                 </div>
 
-
-
-                {/* <div className="flex flex-col md:flex-row gap-7">
-                    <CardProductLopsided title="Shoes!" desc="If a dog chews shoes whose shoes does he choose?" image="/imgs/hmgoepprod.jpg" />
-                    <CardProductLopsided title="Shoes!" desc="If a dog chews shoes whose shoes does he choose?" image="/imgs/hmgoepprod.jpg" />
-                </div> */}
 
                 <div className="hidden lg:flex">
                     <CardProductBig
