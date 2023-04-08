@@ -11,7 +11,7 @@ export const CardProduct = (props) => {
         <h2 className="card-title">{props.title}</h2>
         <p>{props.desc}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+          <Link href={props.link} className="btn btn-primary">Buy now</Link>
         </div>
       </div>
     </div>
@@ -28,7 +28,7 @@ export const CardProductMini = (props) => {
         <h2 className="mb-2 gap-1 card-title">{props.title}</h2>
         <p className="pb-2">{props.desc}</p>
         <div className="card-actions justify-center">
-          <button className="min-h-[2rem] text-[0.8rem] h-8 font-medium btn btn-primary"><Link href="/oneproduct" >Buy Now</Link></button>
+          <Link href={props.link} className="min-h-[2rem] text-[0.8rem] h-8 font-medium btn btn-primary">Buy now</Link>
         </div>
       </div>
     </div>
@@ -37,13 +37,13 @@ export const CardProductMini = (props) => {
 
 export const CardProductMedium = (props) => {
   return (
-    <div class="card lg:card-side bg-base-100 w-80 lg:w-auto lg:max-w-[35rem] shadow-xl">
-  <figure><img src="/imgs/hmgoepprod.jpg" alt="Album"/></figure>
-  <div class="card-body">
-    <h2 class="card-title">New album is released!</h2>
-    <p>Click the button to listen on Spotiwhy app.</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Listen</button>
+    <div className="card lg:card-side bg-base-100 w-80 lg:w-auto lg:max-w-[35rem] shadow-xl">
+  <figure><img src={props.image} alt="Album"/></figure>
+  <div className="card-body">
+    <h2 className="card-title">{props.title}</h2>
+    <p className="w-48">{props.desc}</p>
+    <div className="card-actions justify-end">
+      <Link className="btn btn-primary" href={props.link} >Buy now</Link>
     </div>
   </div>
 </div>
@@ -68,23 +68,19 @@ export const CardProductBig = (props) => {
     return (
         <div className="flex justify-center card lg:card-side bg-base-100 shadow-2xl lg:w-[60rem]">
             <figure>
-              <img className="xl:max-h-[70vh] W-[50%]" src="/imgs/hmgoepprod.jpg" alt="Album"/>
+              <img className="xl:max-h-[70vh] W-[50%]" src={props.image}alt="Album"/>
             </figure>
             <div className="card-body w-[70%]">
-                <h3 className="card-title pr-3">New album is released and nowhere!</h3>
-                <p className="w-[70%] pt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-                    aut blanditiis
-                    consequuntur deserunt dolndis repellat repellendus similique suscipit.
+                <h3 className="card-title pr-3">{props.title}</h3>
+                <p className="w-[70%] pt-5">
+                  {props.desc}
                 </p>
-                <p className="w-[70%] ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-                    aut blanditiis
-                    consequuntur deseciendis repellat repellendus similique suscipit.
+                <p className="w-[70%] ">{props.desc1}
                 </p>
-                <p className="w-[70%] ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-                    aut blanditiuia, quisquam reiciendis repellat repellendus similique suscipit.
+                <p className="w-[70%] ">{props.desc2}
                 </p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Latest drops</button>
+                    <Link className="btn btn-primary" href={props.link} >Buy now</Link>
                 </div>
             </div>
         </div>

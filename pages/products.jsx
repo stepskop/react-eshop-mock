@@ -1,12 +1,32 @@
 import React from "react";
 import Footer from "../components/Footer.jsx";
-import {CardProduct, CardProductBig, CardProductMini, CardProductMedium, CardProductLopsided} from "../components/Card";
+import { CardProduct, CardProductBig, CardProductMini, CardProductMedium, CardProductLopsided } from "../components/Card";
+import { client, urlFor } from '../lib/client';
+import functions from "daisyui/src/colors/functions.js";
+import linkFor from "../lib/linkGen.js";
 
-export default function Products() {
+export default function Products({ products }) {
+    let prodSel = {
+        prod1: products[0],
+        prod2: products[1],
+        prod3: products[2],
+        prod4: products[3],
+        prod5: products[4],
+        prod6: products[5],
+        prod7: products[6]
+    }
+    const { prod1, prod2, prod3, prod4, prod5, prod6, prod7 } = prodSel
+
+    function imageFor(prod) {
+        return urlFor(prod.image && prod.image[0])
+    }
+    
+
+    // ponozky, kalhoty, tricko kratke, mikina, bunda, capka, klobouk
     return (
         <>
-            <section className="flex flex-col items-center gap-7">
-                <div className="lg:w-[72rem] max-w-[97vw] md:w-[32rem] w-80 mt-6 flex gap-x-2">
+            <section className="flex flex-col items-center gap-7 pt-6">
+                {/* <div className="lg:w-[72rem] max-w-[97vw] md:w-[32rem] w-80 mt-6 flex gap-x-2">
                     <button
                         className="rounded-[10px] bg-[#ffb7c1] px-6 py-[2px] hover:bg-[#ca858ec7] hover:ease-in-out hover:duration-200 active:scale-90 active:ease-in-out active:duration-200">
                         Men
@@ -15,56 +35,85 @@ export default function Products() {
                         className="rounded-[10px] bg-[#ffb7c1] px-6 py-[2px] hover:bg-[#ca858ec7] hover:ease-in-out hover:duration-200 active:scale-90 active:ease-in-out active:duration-200">
                         Women
                     </button>
-                </div>
+                </div> */}
 
 
                 <div className="flex justify-center w-80">
-                    <h1 className="text-4xl lg:text-5xl border-b-2 border-black w-fit">Man T-shirts</h1>
+                    <h1 className="text-4xl lg:text-5xl border-b-2 border-black w-fit">Our collection</h1>
                 </div>
                 <div className="flex flex-col md:flex-row justify-center gap-7 lg:mx-5">
-                    
 
-                    <CardProductMedium title="New album is released!" desc="Click the button to listen on Spotiwhy app." btnText="Learn more"/>
 
-                    <CardProductMedium title="New album is released!" desc="Click the button to listen on Spotiwhy app." btnText="Learn more"/>
-                    
+                    <CardProductMedium image={imageFor(prod1)} 
+                        title={prod1.name} 
+                        desc={prod1.desc} 
+                        link={linkFor(prod1)} />
+
+                    <CardProductMedium image={imageFor(prod2)} 
+                        title={prod2.name} 
+                        desc={prod2.desc} 
+                        link={linkFor(prod1)} />
+
                 </div>
-                
 
 
-                <div className="flex flex-col md:flex-row gap-7">
-                    <CardProductLopsided title="Shoes!" desc="If a dog chews shoes whose shoes does he choose?" image="/imgs/hmgoepprod.jpg"/>
-                    <CardProductLopsided title="Shoes!" desc="If a dog chews shoes whose shoes does he choose?" image="/imgs/hmgoepprod.jpg"/>
-                </div>
+
+                {/* <div className="flex flex-col md:flex-row gap-7">
+                    <CardProductLopsided title="Shoes!" desc="If a dog chews shoes whose shoes does he choose?" image="/imgs/hmgoepprod.jpg" />
+                    <CardProductLopsided title="Shoes!" desc="If a dog chews shoes whose shoes does he choose?" image="/imgs/hmgoepprod.jpg" />
+                </div> */}
 
                 <div className="hidden lg:flex">
-                    <CardProductBig/>
+                    <CardProductBig
+                     image={imageFor(prod3)} 
+                     link={linkFor(prod3)} 
+                     title={prod3.name}
+                     desc={prod3.desc}/>
                 </div>
 
                 <div className="flex flex-row flex-wrap justify-center gap-8 mx-7">
                     <CardProductMini
-                        image="/imgs/hmgoepprod.jpg"
-                       title="basic black"
-                       desc="you lookin' for something easy and special?"
+                        image={imageFor(prod4)}
+                        title={prod4.name}
+                        desc={prod4.desc}
+                        link={linkFor(prod4)}
                     ></CardProductMini>
                     <CardProductMini
-                        image="/imgs/hmgoepprod.jpg"
-                       title="basic black"
-                       desc="you lookin' for something easy and special?"
+                        image={imageFor(prod5)}
+                        title={prod5.name}
+                        desc={prod5.desc}
+                        link={linkFor(prod5)}
                     ></CardProductMini>
                     <CardProductMini
-                        image="/imgs/hmgoepprod.jpg"
-                       title="basic black"
-                       desc="you lookin' for something easy and special?"
+                        image={imageFor(prod6)}
+                        title={prod6.name}
+                        desc={prod6.desc}
+                        link={linkFor(prod6)}
                     ></CardProductMini>
                     <CardProductMini
-                        image="/imgs/hmgoepprod.jpg"
-                       title="basic black"
-                       desc="you lookin' for something easy and special?"
+                        image={imageFor(prod7)}
+                        title={prod7.name}
+                        desc={prod7.desc}
+                        link={linkFor(prod7)}
                     ></CardProductMini>
                 </div>
             </section>
-            <Footer/>
+            <Footer />
         </>
     );
+}
+export const getServerSideProps = async () => {
+    const query = '*[_type == "product"]'
+    const products = await client.fetch(query)
+    products.sort(function(a, b) {
+        var keyA = new Date(a._createdAt),
+          keyB = new Date(b._createdAt);
+        // Compare the 2 dates
+        if (keyA < keyB) return -1;
+        if (keyA > keyB) return 1;
+        return 0;
+      });
+    return {
+        props: { products }
+    }
 }
