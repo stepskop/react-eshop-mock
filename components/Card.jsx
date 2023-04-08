@@ -20,13 +20,13 @@ export const CardProduct = (props) => {
 
 export const CardProductMini = (props) => {
   return (
-    <div className="h-max w-56 mx-1 card card-compact bg-base-100 shadow-xl">
+    <div className="h-max min-h-[30rem] w-56 mx-1 card card-compact bg-base-100 shadow-xl">
       <figure>
         <img src={props.image}/>
       </figure>
       <div className="inline p-[8px] card-body">
         <h2 className="mb-2 gap-1 card-title">{props.title}</h2>
-        <p className="pb-2">{props.desc}</p>
+        <p className="pb-2 h-[4rem]">{props.desc}</p>
         <div className="card-actions justify-center">
           <Link href={props.link} className="min-h-[2rem] text-[0.8rem] h-8 font-medium btn btn-primary">Buy now</Link>
         </div>
@@ -37,7 +37,7 @@ export const CardProductMini = (props) => {
 
 export const CardProductMedium = (props) => {
   return (
-    <div className="card lg:card-side bg-base-100 w-80 lg:w-auto lg:max-w-[35rem] shadow-xl">
+    <div className="card lg:card-side bg-base-100 w-80 lg:w-auto lg:min-w-[50%] lg:max-w-[35rem] shadow-xl">
   <figure><img src={props.image} alt="Album"/></figure>
   <div className="card-body">
     <h2 className="card-title">{props.title}</h2>

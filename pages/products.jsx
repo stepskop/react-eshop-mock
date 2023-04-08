@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Footer from "../components/Footer.jsx";
 import { CardProduct, CardProductBig, CardProductMini, CardProductMedium, CardProductLopsided } from "../components/Card";
 import { client, urlFor } from '../lib/client';
@@ -15,13 +15,18 @@ export default function Products({ products }) {
         prod6: products[5],
         prod7: products[6]
     }
+    const [otherProd, setOtherProd] = useState([])  
+    
     const { prod1, prod2, prod3, prod4, prod5, prod6, prod7 } = prodSel
 
+    useEffect(() => {
+        setOtherProd(products.splice(3))
+    }, [])
+    
     function imageFor(prod) {
         return urlFor(prod.image && prod.image[0])
     }
     
-
     // ponozky, kalhoty, tricko kratke, mikina, bunda, capka, klobouk
     return (
         <>
@@ -30,7 +35,7 @@ export default function Products({ products }) {
                 <div className="flex justify-center w-80">
                     <h1 className="text-4xl lg:text-5xl border-b-2 border-black w-fit">Our collection</h1>
                 </div>
-                <div className="flex flex-col md:flex-row justify-center gap-7 lg:mx-5">
+                <div className="flex flex-col md:flex-row justify-center gap-7 lg:mx-5 px-2">
 
 
                     <CardProductMedium image={imageFor(prod1)} 
@@ -54,31 +59,8 @@ export default function Products({ products }) {
                      desc={prod3.desc}/>
                 </div>
 
-                <div className="flex flex-row flex-wrap justify-center gap-8 mx-7">
-                    <CardProductMini
-                        image={imageFor(prod4)}
-                        title={prod4.name}
-                        desc={prod4.desc}
-                        link={linkFor(prod4)}
-                    ></CardProductMini>
-                    <CardProductMini
-                        image={imageFor(prod5)}
-                        title={prod5.name}
-                        desc={prod5.desc}
-                        link={linkFor(prod5)}
-                    ></CardProductMini>
-                    <CardProductMini
-                        image={imageFor(prod6)}
-                        title={prod6.name}
-                        desc={prod6.desc}
-                        link={linkFor(prod6)}
-                    ></CardProductMini>
-                    <CardProductMini
-                        image={imageFor(prod7)}
-                        title={prod7.name}
-                        desc={prod7.desc}
-                        link={linkFor(prod7)}
-                    ></CardProductMini>
+                <div className="flex flex-row flex-wrap justify-center gap-8 mx-7 lg:max-w-[72rem]">
+                    { otherProd?.map((prod,i) => <CardProductMini key={i} image={imageFor(prod)} title={prod.name} desc={prod.desc}link={linkFor(prod)}/>)}
                 </div>
             </section>
             <Footer />
@@ -92,8 +74,8 @@ export const getServerSideProps = async () => {
         var keyA = new Date(a._createdAt),
           keyB = new Date(b._createdAt);
         // Compare the 2 dates
-        if (keyA < keyB) return -1;
-        if (keyA > keyB) return 1;
+        if (keyA > keyB) return -1;
+        if (keyA < keyB) return 1;
         return 0;
       });
     return {
