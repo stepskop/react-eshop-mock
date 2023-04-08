@@ -29,7 +29,7 @@ export default function Navbar() {
                                 <Link href="/story">Story</Link>
                             </li>
                             <li>
-                                <Link href="/subscribe">Subsribe</Link>
+                                <Link href="/subscribe">Subscribe</Link>
                             </li>
                             <li>
                                 <Link href="/privacy">Privacy</Link>
@@ -58,7 +58,7 @@ export default function Navbar() {
                     <button className=""><Link href="/">Home</Link></button>
                     <button className=""><Link href="/products">Products</Link></button>
                     <button className=""><Link href="/story">Story</Link></button>
-                    <button className=""><Link href="/subscribe">Subsribe</Link></button>
+                    <button className=""><Link href="/subscribe">Subscribe</Link></button>
                     <button className=""><Link href="/privacy">Privacy</Link></button>
 
                     {/* Big */}
