@@ -31,7 +31,7 @@ export const StateContext = ({ children }) => {
                     setCartItems([...cartItems, {...product}])
                 } else {
                     const updatedCart = cartItems.map((cartProd) => {
-                        if (cartProd._id === product._id) return {
+                        if ((cartProd.pickedsize === pickedsize) && (cartProd._id === product._id)) return {
                             ...cartProd,
                             quantity: cartProd.quantity + quantity
                         } 
