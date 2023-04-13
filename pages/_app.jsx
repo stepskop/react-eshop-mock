@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import { StateContext } from "../context/StateContext";
 import "../styles/App.css"
 import Cart from "../components/Cart";
-
+//Start
 export default function MyApp({ Component, pageProps }) {
     return(
         <StateContext>
