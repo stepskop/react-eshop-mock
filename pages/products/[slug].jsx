@@ -90,8 +90,7 @@ export const getStaticPaths = async () => {
   }))
   return {
     paths,
-    fallback: 'blocking',
-    revalidate: 10
+    fallback: 'blocking'
   }
 }
 export const getStaticProps = async ({ params: { slug }}) => {
@@ -99,6 +98,7 @@ export const getStaticProps = async ({ params: { slug }}) => {
 
   const product = await client.fetch(query)
   return {
-      props: {product}
+      props: {product},
+      revalidate: 10
   }
 }
