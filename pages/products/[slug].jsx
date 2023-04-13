@@ -90,7 +90,8 @@ export const getStaticPaths = async () => {
   }))
   return {
     paths,
-    fallback: 'blocking'
+    fallback: 'blocking',
+    revalidate: 10
   }
 }
 export const getStaticProps = async ({ params: { slug }}) => {
