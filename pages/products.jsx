@@ -19,7 +19,7 @@ export default function Products({ products }) {
     const { prod1, prod2, prod3, prod4, prod5, prod6, prod7 } = prodSel
 
     useEffect(() => {
-        setOtherProd(products.splice(4))
+        setOtherProd(products.splice(3))
     }, [])
     
     function imageFor(prod) {
@@ -37,25 +37,25 @@ export default function Products({ products }) {
                 <div className="flex flex-col md:flex-row justify-center gap-7 lg:mx-5 px-2">
 
 
+                    <CardProductMedium image={imageFor(prod1)} 
+                        title={prod1.name} 
+                        desc={prod1.desc} 
+                        link={linkFor(prod1)} />
+
                     <CardProductMedium image={imageFor(prod2)} 
                         title={prod2.name} 
                         desc={prod2.desc} 
                         link={linkFor(prod2)} />
-
-                    <CardProductMedium image={imageFor(prod3)} 
-                        title={prod3.name} 
-                        desc={prod3.desc} 
-                        link={linkFor(prod3)} />
 
                 </div>
 
 
                 <div className="hidden lg:flex">
                     <CardProductBig
-                     image={imageFor(prod4)} 
-                     link={linkFor(prod4)} 
-                     title={prod4.name}
-                     desc={prod4.desc}/>
+                     image={imageFor(prod3)} 
+                     link={linkFor(prod3)} 
+                     title={prod3.name}
+                     desc={prod3.desc}/>
                 </div>
 
                 <div className="flex flex-row flex-wrap justify-center gap-8 mx-7 lg:max-w-[72rem]">
