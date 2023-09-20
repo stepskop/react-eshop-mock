@@ -7,6 +7,7 @@ import linkFor from "../lib/linkGen.js";
 
 export default function Products({ products }) {
     let prodSel = {
+        prod1: products[0],
         prod2: products[1],
         prod3: products[2],
         prod4: products[3],
